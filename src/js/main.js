@@ -20,9 +20,9 @@ $(function() {
         }, 1000);
     });
 
-    $('.testimonial__slider').slick({
-        dots: false,
-        arrows: false,
+    $('.intro__slider').slick({
+        dots: true,
+        arrows: true,
         infinite: true,
         autoplay: true,
         autoplaySpeed: 2000,

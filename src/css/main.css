@@ -29,10 +29,83 @@ body {
 .container {
   margin: 0 auto;
   max-width: 1200px;
-  padding: 0 15px; }
+  padding: 0 15px;
+  position: relative; }
 
 .swiper-container {
   width: 100%; }
+
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  margin: 0;
+  padding: 28px 70px 0;
+  z-index: 1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-flow: row nowrap;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+/*
+** NAVIGATION
+**/
+.nav, .nav__list {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-flow: row nowrap;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap; }
+  .nav__list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 33px 0; }
+  .nav__item {
+    margin-left: 17px; }
+    .nav__item:first-child {
+      margin: 0; }
+    .nav__item span {
+      color: #fff;
+      font-weight: 300;
+      font-size: 0.75rem;
+      letter-spacing: 0.075rem; }
+  .nav__link {
+    display: block;
+    color: #fff;
+    font-family: "Lato", sans-serif;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    text-decoration: none; }
+    .nav__link:focused {
+      font-weight: 300; }
 
 .intro {
   -webkit-border-radius: 6px;
@@ -42,11 +115,15 @@ body {
   padding: 0;
   margin: 0; }
 
-.preview {
-  max-width: 1200px; }
-
 .intro__slider {
   width: 100%; }
 
 .intro__slide {
   width: 100%; }
+
+.intro__slide-img {
+  -webkit-border-radius: 6px;
+          border-radius: 6px;
+  -webkit-filter: blur(4px);
+          filter: blur(4px);
+  opacity: 0.5; }
