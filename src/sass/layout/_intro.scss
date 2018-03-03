@@ -16,6 +16,5 @@
 
 .intro__slide-img {
     border-radius: 6px;
-    filter: blur(4px);
-    opacity: 0.5;
+    filter: blur(4px) opacity(50%);
 }

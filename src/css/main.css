@@ -124,6 +124,5 @@ body {
 .intro__slide-img {
   -webkit-border-radius: 6px;
           border-radius: 6px;
-  -webkit-filter: blur(4px);
-          filter: blur(4px);
-  opacity: 0.5; }
+  -webkit-filter: blur(4px) opacity(50%);
+          filter: blur(4px) opacity(50%); }
