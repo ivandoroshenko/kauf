@@ -25,8 +25,11 @@ body{
 
 .container {
     margin: 0 auto;
-    max-width: 1200px;
-    padding: 0 15px;
+    max-width: 1170px;
     position: relative;
    
+}
+
+.col-10 {
+    min-width: 1030px;
 }

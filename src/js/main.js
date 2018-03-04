@@ -1,14 +1,5 @@
 $(function() {
 
-    $(document).ready(function () {
-        //initialize swiper when document ready
-        var mySwiper = new Swiper('.swiper-container', {
-            // Optional parameters
-            direction: 'vertical',
-            loop: true
-        })
-    });
-
     //navigation click======
     $('.nav__item a').click(function (e) {
         e.preventDefault();
@@ -21,17 +12,21 @@ $(function() {
     });
 
     $('.intro__slider').slick({
+       
         dots: true,
         arrows: true,
         infinite: true,
-        autoplay: true,
+        autoplay: false,
         autoplaySpeed: 2000,
         speed: 700,
         fade: false,
         cssEase: 'linear',
-        adaptiveHeight: false
+        adaptiveHeight: false,
+        prevArrow: $('.prev'),
+        nextArrow: $('.next')
     });
    
+
 
     // $('.parallax-window').parallax({ 
     //     imageSrc: '../img/paralax_bg.jpg' 
@@ -50,11 +45,24 @@ $(function() {
      
     }); 
 
-  
+    $('#video1').click(function (event) {
+        this.paused ? this.play() : this.pause();
+    });
+
+    // $(document).bind("click keydown", function (event) {
+    //     closeModal = event.target;
+    //     escapeClose = event.which;
+    //     if ($(closeModal).hasClass("modal__close") || $(closeModal).hasClass("overlay") || escapeClose == 27) {
+    //         $('.modal, .overlay').hide();
+    //         $('body').removeClass("fixed_overlay");
+    //     }
+
+    // });
 
     //button up
     $(document).click(function (event) {
         btnUp = event.target;
+        console.log(event.target);
         if ($(btnUp.parentNode).hasClass('btn-up') ) {
             $('body, html').animate({ 'scrollTop': 0 }, 1000);
         }

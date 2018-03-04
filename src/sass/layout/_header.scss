@@ -32,15 +32,19 @@
 
     &__item {
         margin-left: 17px;
+        white-space: nowrap;
+        display: flex;
+        flex-flow: row nowrap;
         &:first-child {
             margin: 0;
+            
         }
         
         span {
             color: #fff;
             font-weight: 300;
-            font-size: 0.75rem;
-            letter-spacing: 0.075rem;
+            font-size: 0.7rem;
+            margin-right: 17px;
         }
     }
 
