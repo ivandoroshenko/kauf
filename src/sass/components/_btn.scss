@@ -1,0 +1,20 @@
+.intro__slider-btn {
+    position: absolute;
+    bottom: 95px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 24px;
+    background-color: #49a0d5;
+    padding: 17px 33px;
+    border: none;
+    font-family: $base-font;
+    font-size: 0.875rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
+
+    &:hover {
+        box-shadow: 0 20px 40px rgba(168, 173, 187, 0.8);
+        opacity: 0.8;
+    }
+}   
