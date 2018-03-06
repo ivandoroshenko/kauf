@@ -1,6 +1,132 @@
 .storage {
     @include block-radius;
     background-color: #f7f7f9;
-    padding: 23px 10px;
+    padding: 23px 10px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.storage__heading {
+    display: flex;
+    flex-flow: row nowrap;
+    margin: 0 0 17px;
+    padding: 0;
+}
+.storage__title {
+    padding: 0;
+    margin: 0 21px;
+    color: #454553;
+    font-family: $base-font;
+    font-size: 0.875rem;
+    font-weight: 400;
+    text-transform: uppercase;
 }
 
+.storage-next,
+.storage-prev {
+      color: rgba(69, 69, 83, 0.5);
+      cursor: pointer;
+    }
+
+
+.storage__slider{
+    width: 100%;
+}
+.storage__slide {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+
+    &:nth-child(3n)  .storage__item--descr{
+        
+        border: none;
+    
+    }
+
+}
+
+
+.storage__item {
+    padding: 0;
+    margin-right: 30px;
+    display: flex;
+    flex-flow: row nowrap;
+
+    
+}
+
+    .storage__item--descr {
+        margin-top: 14px;
+        text-align-last: left;
+        padding-right: 50px ;
+        border-right: 1px solid #dddde4;
+    }
+        
+    
+    
+
+
+
+
+.storage__item-category {
+    color: #454553;
+    font-family: $base-font;
+    font-size: 0.875rem;
+    font-weight: 300;
+    padding: 0;
+    margin: 0 0 9px;
+}
+
+ .storage__item-status {
+        display: inline-block;
+        text-decoration: none;
+        margin: 0 0 17px;
+        border-radius: 4px;
+        padding: 6px 10px;
+        text-transform: uppercase;
+        font-family: $base-font;
+        color: #fff;
+        font-size: 0.688rem;
+        
+
+        &#new {
+            background-color: #f2a77e;
+        }
+
+         &#best {
+            background-color: #b9aada;
+        }
+
+         &#bio {
+            background-color: #bbcc76;
+        }
+
+    }
+    
+    
+    .storage__item-name {
+        color: #454553;
+        font-family: $base-font;
+        font-size: 1.375rem;
+        font-weight: 400;
+        white-space: nowrap;
+        padding: 0;
+        margin: 0 0 20px;
+    }
+
+    .buy--btn {
+        display: inline-block;
+        border-radius: 16px;
+        border: 1.5px solid rgba(69, 69, 83, 0.3);
+        margin: 0;
+        padding: 7px 21px;
+        text-decoration: none;
+        color: #454553;
+
+        font-family: $base-font;    
+        font-size: 0.875rem;
+        font-weight: 700;
+        white-space: nowrap;
+    }

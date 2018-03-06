@@ -22,6 +22,7 @@
     <div class="container">
         <header class="header" id="header">
             <img src="img/logo.png" alt="Hauf" class="logo" id="logo">
+            <h1 class="header__title">Kauf</h1>
             <nav class="nav">
                 <ul class="nav__list">
                     <li class="nav__item">
@@ -49,15 +50,16 @@
                 
         </header>
             <main>
-                <div class="intro">
+                <section class="intro">
+                    <h2 class="intro__title">make it beautiful</h2>
                     <!-- top slider -->
+
+                    <!-- SLIDER CONTROLS -->
+                    <div class="prev prev-left"> <i class="fas fa-chevron-left"></i> </div>
+                    <div class="next prev-right"><i class="fas fa-chevron-right"></i></div>
+                    <!-- /SLIDER CONTROLS -->
                     
-                    <div class="prev prev-left">
-                        <i class="fas fa-chevron-left"></i>
-                    </div>
-                    <div class="next prev-right">
-                        <i class="fas fa-chevron-right"></i>
-                    </div>
+
                         <div class="intro__slider">
                             <div class="intro__slide">
                                 <img class="intro__img" src="img/Backgroundbur.jpg" alt="Slide1">
@@ -105,18 +107,111 @@
                                
                    
                      
+                </section> <!-- /intro -->
+                <section class="storage">
+                    <div class="storage__heading">
+                        <!-- SLIDER CONTROLS -->
+                        <div class="storage-prev prev-left">
+                            <i class="fas fa-chevron-left"></i>
+                        </div>
+                        <!-- /SLIDER CONTROLS -->
+                        
+                        <h2 class="storage__title">Related Items</h2>
+                        
+                        <!-- SLIDER CONTROLS -->
+                        <div class="storage-next prev-right">
+                            <i class="fas fa-chevron-right"></i>
+                        </div>
+                        <!-- /SLIDER CONTROLS -->
+
                     </div>
-               
-           
-            
-            <!-- storage sider -->
-            
-            <div class="storage">
-                <div class="storage__card">
-                    <img src="img/rel-item1__bag.jpg" alt="storage__picture" class="storage__picture">
-                </div>
+
+                  
+                    <!-- storage slider -->
+                    <div class="storage__slider">
+
+                        <!-- FIRST SET -->
+                        <div class="storage__slide">
+                            <div class="storage__item">
+                                <img src="img/rel-item1__bag.jpg" alt="item" class="storage__item-picture">
+                                <div class="storage__item--descr">
+                                    <a href="#" class="storage__item-status" id='new'>New</a>
+                                    <h4 class="storage__item-category">Bags</h4>
+                                    <h3 class="storage__item-name">Marschall Pack</h3>
+                                    <a href="#" class="btn buy--btn">$ 359.00</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="storage__slide">
+                            <div class="storage__item">
+                                <img src="img/rel-item2__keys.jpg" alt="item class="storage__item-picture">
+                                <div class="storage__item--descr">
+                                    <a href="#" class="storage__item-status" id='best'>Best Buy</a>
+                                    <h4 class="storage__item-category">Accessories</h4>
+                                    <h3 class="storage__item-name">EDC Kit 2</h3>
+                                    <a href="#" class="btn buy--btn">$ 229.00</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="storage__slide">
+                            <div class="storage__item">
+                                <img src="img/rel-item3__pack.jpg" alt="item" class="storage__item-picture">
+                                <div class="storage__item--descr">
+                                    <a href="#" class="storage__item-status" id='bio'>Bio</a>
+                                    <h4 class="storage__item-category">Garden</h4>
+                                    <h3 class="storage__item-name">All Natural Soil</h3>
+                                    <a href="#" class="btn buy--btn">$ 16.00</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!--/ FIRST SET -->
+
+
+                        <!-- SECOND SET -->
+                        <div class="storage__slide">
+                            <div class="storage__item">
+                                <img src="img/rel-item1__bag.jpg" alt="item" class="storage__item-picture">
+                                <div class="storage__item--descr">
+                                    <a href="#" class="storage__item-status" id='new'>New</a>
+                                    <h4 class="storage__item-category">Bags</h4>
+                                    <h3 class="storage__item-name">Marschall Pack</h3>
+                                    <a href="#" class="btn buy--btn">$ 359.00</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="storage__slide">
+                            <div class="storage__item">
+                                <img src="img/rel-item2__keys.jpg" alt="item class=" storage__item-picture ">
+                                                    <div class="storage__item--descr ">
+                                                        <a href="# " class="storage__item-status " id='best'>Best Buy</a>
+                                                        <h4 class="storage__item-category ">Accessories</h4>
+                                                        <h3 class="storage__item-name ">EDC Kit 2</h3>
+                                                        <a href="# " class="btn buy--btn ">$ 229.00</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                        
+                                            <div class="storage__slide ">
+                                                <div class="storage__item ">
+                                                    <img src="img/rel-item3__pack.jpg " alt="item " class="storage__item-picture ">
+                                                    <div class="storage__item--descr ">
+                                                        <a href="# " class="storage__item-status " id='bio'>Bio</a>
+                                                        <h4 class="storage__item-category ">Garden</h4>
+                                                        <h3 class="storage__item-name ">All Natural Soil</h3>
+                                                        <a href="# " class="btn buy--btn ">$ 16.00</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--/ SECOND SET -->
+                        
+                        
+
+                    </div> <!-- /storage__slider -->
                 
-            </div> <!-- /storage-slider -->
+                </section> <!-- /storage-slider -->
 
             <!-- sorting UI instrument -->
             <div class="filter-paginator">

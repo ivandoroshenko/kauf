@@ -15,7 +15,7 @@ $(function() {
        
         dots: true,
         arrows: true,
-        infinite: true,
+        infinite: false,
         autoplay: false,
         autoplaySpeed: 2000,
         speed: 700,
@@ -24,6 +24,23 @@ $(function() {
         adaptiveHeight: false,
         prevArrow: $('.prev'),
         nextArrow: $('.next')
+    });
+
+    $('.storage__slider').slick({
+
+        dots: false,
+        arrows: true,
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        infinite: true,
+        autoplay: false,
+        autoplaySpeed: 2000,
+        speed: 700,
+        fade: false,
+        cssEase: 'linear',
+        adaptiveHeight: false,
+        prevArrow: $('.storage-prev'),
+        nextArrow: $('.storage-next')
     });
    
 

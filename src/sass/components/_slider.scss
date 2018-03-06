@@ -33,7 +33,7 @@
 .next {
     z-index: 3;
     position: absolute;
-    top: 46%;
+    top: 50%;
     transform: translateY(-50%);
     display: flex;
     justify-content: center;
@@ -45,7 +45,14 @@
     color: #fff;
     border: 1px solid rgba(255, 255, 255, 0.35);
     border-radius: 50%;
+
+    
 }
+
+.slick-disabled {
+    color: rgba(255, 255, 255, 0.35);
+}
+
 .prev {
     left: 70px;
 }
@@ -53,7 +60,7 @@
     right: 70px;
 }
 
-
+//*********** DOTS
  .slick-dots{
     bottom: 30px;
 
