@@ -64,7 +64,13 @@ body {
   width: 100%;
   height: auto;
   padding: 0;
+<<<<<<< HEAD
   margin: 0; }
+=======
+  margin: 0;
+  overflow: hidden;
+  z-index: 2; }
+>>>>>>> fc4f2f5
 
 .intro__slide {
   position: relative;
@@ -83,12 +89,21 @@ body {
 
 .prev,
 .next {
+<<<<<<< HEAD
   top: 50%;
   -webkit-transform: translateY(-50%);
       -ms-transform: translateY(-50%);
           transform: translateY(-50%);
   z-index: 2;
   position: absolute;
+=======
+  z-index: 3;
+  position: absolute;
+  top: 46%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+>>>>>>> fc4f2f5
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -117,11 +132,20 @@ body {
 .prev {
   left: 70px; }
 
+.prev {
+  left: 70px; }
+
 .next {
+<<<<<<< HEAD
   right: 70px; }
+=======
+  right: 70px;
+  padding-left: 19px;
+  padding-right: 17px; }
+>>>>>>> fc4f2f5
 
 .slick-dots {
-  bottom: 32px; }
+  bottom: 30px; }
   .slick-dots li {
     width: 9px;
     height: 9px;
@@ -139,17 +163,42 @@ body {
 
 .video__wrapper {
   position: absolute;
-  top: 50%;
+  top: 46%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+<<<<<<< HEAD
   z-index: 2;
   cursor: pointer; }
+=======
+  z-index: 3;
+  cursor: pointer;
+  width: 630px; }
+>>>>>>> fc4f2f5
 
 video {
   position: relative;
   z-index: 2; }
+
+.btn {
+  text-transform: uppercase;
+  -webkit-border-radius: 24px;
+          border-radius: 24px;
+  border: none; }
+
+.btn--video {
+  position: absolute;
+  bottom: 100px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background-color: #49a0d5;
+  font-family: "Lato", sans-serif;
+  color: #fff;
+  font-size: 0.875rem;
+  padding: 17px 33px; }
 
 .header {
   position: absolute;
@@ -246,5 +295,9 @@ video {
           border-radius: 5px;
   padding: 0;
   margin: 0;
+<<<<<<< HEAD
   background-color: #f7f7f9;
   padding: 23px 10px; }
+=======
+  position: relative; }
+>>>>>>> fc4f2f5

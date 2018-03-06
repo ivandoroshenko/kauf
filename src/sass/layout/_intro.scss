@@ -1,6 +1,9 @@
 .intro {
     @include block-radius;
     background-color: #232428;
-    margin-bottom: 30px;
+    width: 100%; 
+    padding: 0;
+    margin: 0;  
+    position: relative;       
 }
 

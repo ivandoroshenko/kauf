@@ -1,22 +1,19 @@
-.intro__slider-btn {
+.btn {
+    text-transform: uppercase;
+    border-radius: 24px;
+    border: none;
+
+    
+}
+
+.btn--video {
     position: absolute;
-    bottom: 95px;
+    bottom: 100px;
     left: 50%;
     transform: translateX(-50%);
-    border-radius: 24px;
     background-color: #49a0d5;
-    padding: 17px 33px;
-    border: none;
     font-family: $base-font;
-    font-size: 0.875rem;
-    font-weight: 700;
-    text-transform: uppercase;
     color: #fff;
-    cursor: pointer;
-
-    &:hover {
-        box-shadow: 0 20px 40px rgba(168, 173, 187, 0.8);
-        opacity: 0.8;
-        
-    }
-}   
+    font-size: 0.875rem;
+    padding: 17px 33px;
+}
