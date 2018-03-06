@@ -12,9 +12,11 @@
     font-weight: 700;
     text-transform: uppercase;
     color: #fff;
+    cursor: pointer;
 
     &:hover {
         box-shadow: 0 20px 40px rgba(168, 173, 187, 0.8);
         opacity: 0.8;
+        
     }
 }   
