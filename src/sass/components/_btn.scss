@@ -1,0 +1,19 @@
+.btn {
+    text-transform: uppercase;
+    border-radius: 24px;
+    border: none;
+
+    
+}
+
+.btn--video {
+    position: absolute;
+    bottom: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #49a0d5;
+    font-family: $base-font;
+    color: #fff;
+    font-size: 0.875rem;
+    padding: 17px 33px;
+}

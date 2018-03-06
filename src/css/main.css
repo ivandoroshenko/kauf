@@ -41,8 +41,8 @@ body {
   height: auto;
   padding: 0;
   margin: 0;
-  position: relative;
-  overflow: hidden; }
+  overflow: hidden;
+  z-index: 2; }
 
 .intro__slide {
   position: relative;
@@ -56,31 +56,14 @@ body {
   -webkit-filter: blur(4px) opacity(50%);
           filter: blur(4px) opacity(50%); }
 
-.intro__slide-controls {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  position: absolute;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  left: 50%;
-  top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  z-index: 1; }
-  @media screen and (max-width: 460px) {
-    .intro__slide-controls {
-      display: none; } }
-
 .prev,
 .next {
+  z-index: 3;
+  position: absolute;
+  top: 46%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -102,12 +85,16 @@ body {
   -webkit-border-radius: 50%;
           border-radius: 50%; }
 
+.prev {
+  left: 70px; }
+
 .next {
+  right: 70px;
   padding-left: 19px;
   padding-right: 17px; }
 
 .slick-dots {
-  bottom: 32px; }
+  bottom: 30px; }
   .slick-dots li {
     width: 9px;
     height: 9px;
@@ -125,13 +112,14 @@ body {
 
 .video__wrapper {
   position: absolute;
-  top: 50%;
+  top: 46%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   z-index: 3;
-  cursor: pointer; }
+  cursor: pointer;
+  width: 630px; }
 
 .play {
   position: absolute;
@@ -171,6 +159,25 @@ body {
   color: #fff;
   margin-left: 2px;
   z-index: 4; }
+
+.btn {
+  text-transform: uppercase;
+  -webkit-border-radius: 24px;
+          border-radius: 24px;
+  border: none; }
+
+.btn--video {
+  position: absolute;
+  bottom: 100px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background-color: #49a0d5;
+  font-family: "Lato", sans-serif;
+  color: #fff;
+  font-size: 0.875rem;
+  padding: 17px 33px; }
 
 .header {
   position: absolute;
@@ -260,4 +267,5 @@ body {
   background-color: #232428;
   width: 100%;
   padding: 0;
-  margin: 0; }
+  margin: 0;
+  position: relative; }

@@ -45,7 +45,7 @@ $(function() {
      
     }); 
 
-    $('#video1').click(function (event) {
+    $('#video1, #video2, #video3').click(function (event) {
         this.paused ? this.play() : this.pause();
     });
 
