@@ -1,0 +1,58 @@
+.paginator {
+    @include block-radius; 
+    background-color: #454553;
+    margin: 0;
+    padding: 25px 40px 25px 50px;
+   
+}
+
+.paginator__title {
+    padding: 0;
+    margin: 0;
+    color: #a1a1af;
+    font-family: $base-font;
+    font-size: 0.875rem;
+    font-weight: 700;
+}
+
+.container-select  {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+
+    span {
+        display: block;
+    }
+    
+}
+.sort {
+    padding: 0;
+    margin: 0 0 0 5px;
+    list-style-type: none;
+    display: flex;
+    flex-flow: column nowrap;
+    position: relative;
+
+
+}
+
+.sort__item {
+    display: none;
+
+    .sort__link {
+        color: #fff;
+        font-family: $base-font;
+        font-size: 0.688rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 1.32px;
+        text-decoration: none;
+
+    }
+    
+    &:first-child {
+        display: block;
+    }
+}
+
+
