@@ -443,24 +443,99 @@ body {
   font-weight: 700;
   white-space: nowrap; }
 
-.paginator {
+.select {
   -webkit-border-radius: 5px;
           border-radius: 5px;
   padding: 0;
   margin: 0;
   background-color: #454553;
-  margin: 0;
-  padding: 25px 40px 25px 50px; }
+  margin: 0 0 30px 0;
+  padding: 20px 40px 20px 50px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-flow: row nowrap;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
 
-.paginator__title {
+.select__title {
   padding: 0;
-  margin: 0;
+  margin: 0 5px 0 0;
   color: #a1a1af;
   font-family: "Lato", sans-serif;
   font-size: 0.875rem;
-  font-weight: 700; }
+  font-weight: 700;
+  white-space: nowrap; }
+  .select__title span {
+    margin-left: 5px; }
 
-.container-select {
+.select__wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-flow: row nowrap;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  margin: 0;
+  position: relative;
+  z-index: 99;
+  padding: 12px 60px 12px 0;
+  border-right: 1px solid #5f5f6f; }
+  .select__wrapper:hover {
+    -webkit-box-shadow: 0px 0px 3px gray;
+            box-shadow: 0px 0px 3px gray; }
+
+select {
+  min-width: 82px;
+  padding-right: 10px;
+  margin: 0;
+  background: url("../img/arrow-down.png") right center no-repeat #454553;
+  background-attachment: initial;
+  border: 0;
+  color: #fff;
+  font-family: "Lato", sans-serif;
+  font-size: 0.688rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  appearance: none;
+  /* remove arrow        */
+  -webkit-appearance: none;
+  /* remove arrow Chrome */
+  -moz-appearance: none;
+  /* remove arrow FF     */ }
+
+.select__wrapper select::-ms-expand {
+  display: none;
+  /* remove arrow IE     */ }
+
+.sort__list {
+  position: relative;
+  z-index: 1;
+  margin: 0;
+  padding: 0 0 0 40px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -473,34 +548,128 @@ body {
   -webkit-box-align: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
-          align-items: center; }
-  .container-select span {
+          align-items: center;
+  width: 70%;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  list-style-type: none;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.sort__link {
+  text-decoration: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 28px;
+  height: 28px;
+  color: #a1a1af;
+  font-family: "Lato", sans-serif;
+  font-size: 0.875rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  -webkit-transition: color .3s ease-out;
+  -o-transition: color .3s ease-out;
+  transition: color .3s ease-out; }
+  .sort__link:hover {
+    -webkit-border-radius: 50%;
+            border-radius: 50%;
+    border: 0.125rem solid #49a0d5;
+    color: #fff;
+    font-weight: 900; }
+
+.news {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-flow: row wrap;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  max-width: 1170px; }
+
+.news__title {
+  display: none; }
+
+.news__card {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-border-radius: 6px;
+          border-radius: 6px;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 0;
+      -ms-flex: 1 1 0px;
+          flex: 1 1 0;
+  margin-right: 30px; }
+  .news__card:last-child {
+    -webkit-flex-basis: 100%;
+        -ms-flex-preferred-size: 100%;
+            flex-basis: 100%;
+    margin: 0; }
+  .news__card img {
     display: block; }
 
-.sort {
-  padding: 0;
-  margin: 0 0 0 5px;
-  list-style-type: none;
+.news__card--cars {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -webkit-flex-flow: column nowrap;
-      -ms-flex-flow: column nowrap;
-          flex-flow: column nowrap;
-  position: relative; }
+  -webkit-flex-flow: column wrap;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap; }
 
-.sort__item {
-  display: none; }
-  .sort__item .sort__link {
-    color: #fff;
-    font-family: "Lato", sans-serif;
-    font-size: 0.688rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 1.32px;
-    text-decoration: none; }
-  .sort__item:first-child {
-    display: block; }
+.news__card-category {
+  position: absolute;
+  display: block; }
+  .news__card-category span {
+    display: block;
+    height: 12px;
+    width: 12px;
+    -webkit-border-radius: 50%;
+            border-radius: 50%;
+    margin: 0;
+    padding-right: 4px; }
+
+.cars-category {
+  left: 29px;
+  bottom: 22px; }
+
+.card-descr--cars {
+  background-color: #f7f7f9; }
+
+.news__card-testimonials {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  .news__card-testimonials h4 {
+    padding: 0;
+    margin: 0; }
