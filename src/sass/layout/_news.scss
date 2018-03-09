@@ -1,70 +1,258 @@
 .news {
     display: flex;
-    flex-flow: row wrap;
-    max-width: 1170px;
+    flex-flow: row nowrap;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
 }
-
 .news__title {
     display: none;
+    padding: 0;
+    margin: 0;
 }
 
+.news-col-4 {
+   width: 270px / 1170px * 100%;
+//    position: relative;
+   overflow: visible;
+    
+}
 .news__card {
-    display: flex;
     border-radius: 6px;
-    flex: 1 1 0;
+    position: relative;
+    // overflow: visible;    
     margin-right: 30px;
 
     &:last-child {
-        flex-basis: 100%;
-        margin: 0;
+        margin-right: 0;
     }
 
     img {
+        width: 100%;
+        // flex-grow: 1;
+        flex-shrink: 0;
         display: block;
     }
 }
 
+// CARS
+
 .news__card--cars {
+    .news__card-title {
+        color: #454553;
+        font-family: $base-font;
+        font-size: 1.125rem;
+        font-weight: 700;
+        padding: 0;
+        margin: 0 0 9px;
+    }
+
+    .news__card-subtitle {
+        color: #8c8c99;
+        font-family: $base-font;
+        font-size: 1rem;
+        font-weight: 400;
+        letter-spacing: 0.006rem;
+        padding: 0;
+        margin: 0 0 26px;
+    }
+}
+
+
+// OUTDOORS
+.news__card--outdoors {
+    
+
+    img {
+        border-radius: 6px;
+    }
+    
+    // weird circle near the heading
+    .news__card-subtitle-wrapper {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 0 10px;
+    max-width: 168px;
+    
+    
+        img {
+            display: block;
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            margin-right: 4px;
+        }
+    }
+    .news__card-subtitle {
+        padding: 0;
+        color: #fff;
+        font-family: $base-font;
+        font-size: 0.75rem;
+        font-weight: 700;
+        letter-spacing: 0.075rem;
+        margin-right: 6px;
+
+        
+    }
+
+    time {
+        color: #fff;
+        font-family: $base-font;
+        font-size: 0.75rem;
+        font-weight: 400;
+        margin-right: 6px;
+
+    }
+
+    .news__card-title {
+        color: #fff;
+        font-family: $base-font;;
+        font-size: 1.625rem;
+        font-weight: 400;
+        margin: 0 0 20px;
+        padding: 0;
+        max-width: 185px;
+    }
+    
+}
+
+
+
+.news__card-descr {
+    background-color: #f7f7f9;
     display: flex;
     flex-flow: column wrap;
+    padding: 29px 20px 14px;
+    width: 100%;
+    
+    &--outdoors {
+        padding: 0 30px 38px;
+        margin-top: auto;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        background: transparent;
+    
+    }
+
+    &--art {
+        width: 50%;
+    }
+
+
 }
 
 .news__image-wrapper {
-    
+    position: relative;
 }
+
 .news__card-category {
-    position: absolute;
-    display: block;
+    
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    text-decoration: none;
+
+    font-family: $base-font;
+    font-size: 0.625rem;
+    font-weight: 700;
+    line-height: 13.5px;
+    text-transform: uppercase;
+    letter-spacing: 0.063rem;
+
+    &--cars {
+        position: absolute;
+        left: 29px;
+        bottom: 20px;
+        color: #fff;
+
+
+        span {
+             background-color: #d47e8e;        
+        }
+    }
+
+    &--outdoor {
+      
+        color: #fff;
+
+        span {
+            background-color: #5beeaf;
+        }
+    }
 
     span {
         display: block;
-        height: 12px;
         width: 12px;
+        height: 12px;
         border-radius: 50%;
-        margin: 0;
-        padding-right: 4px;
+        margin-right: 4px;
         
     }
-   
+
+    &--art {
+        color: #454553;
+        font-weight: 700;
+        margin-bottom: 27px;
+        span {
+            background-color: #4a90e2;
+        }
+    }
 }
- .cars-category {
-        left: 29px;
-        bottom: 22px;
+// ART
+.news__card--art {
+    display: flex;
+    flex-flow: row-reverse nowrap;
+    flex-grow: 1;
+
+    img {
+        height: 100%;
+        width: 300px;
+    }
+    .news__card-title {
+        color: #454553;
+        font-family: $base-font;
+        font-size: 1.375rem;
+        font-weight: 700;
+        padding: 0;
+        margin: 0 0 15px;
+        max-width: 215px;
     }
 
-.card-descr--cars{
-    background-color: #f7f7f9;
+    .news__card-subtitle {
+        color: #454553;
+        font-family: $base-font;
+        font-size: 1.125rem;
+        font-weight: 400;
+        letter-spacing: 0.007rem;
+        max-width: 215px;
+        padding: 0;
+        margin: 0 0 38px;
+        span {
+            color: #4aa0d5;
+        }
+    }
     
 }
 
 .news__card-testimonials {
-    width: 100%;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    
-    h4 {
+    flex-flow: row wrap;
+    padding: 12px 12px 0;
+    border-top: 1px solid #e7e7e7;
+
+    .count {
         padding: 0;
         margin: 0;
     }
+
+     .count--like {
+         margin-right: 20px;
+     }  
+
+     .count--comment {
+         margin-right: 40px;
+     }
 }

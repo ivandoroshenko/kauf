@@ -27,9 +27,8 @@ body{
     margin: 0 auto;
     max-width: 1170px;
     position: relative;
-    padding: 0; 
+    padding: 0;
+    border-radius: 6px; 
+    border: 1px dotted #000;
 }
 
-.col-10 {
-    min-width: 1030px;
-}
