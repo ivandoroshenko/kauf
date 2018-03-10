@@ -694,7 +694,7 @@ select {
     font-weight: 700;
     letter-spacing: 0.075rem;
     margin-right: 6px; }
-  .news__card--outdoors time {
+  .news__card--outdoors .time {
     color: #fff;
     font-family: "Lato", sans-serif;
     font-size: 0.75rem;
@@ -708,9 +708,6 @@ select {
     margin: 0 0 20px;
     padding: 0;
     max-width: 185px; }
-
-.news__card--art {
-  width: 48.71795%; }
 
 .news__card-descr {
   background-color: #f7f7f9;
@@ -741,7 +738,8 @@ select {
 .news__image-wrapper {
   position: relative;
   -webkit-border-radius: 6px;
-          border-radius: 6px; }
+          border-radius: 6px;
+  width: 300px; }
 
 .news__card-category {
   display: -webkit-box;
@@ -804,7 +802,8 @@ select {
       -ms-flex-positive: 1;
           flex-grow: 1; }
   .news__card--art img {
-    height: 100%; }
+    height: auto;
+    width: 300px; }
   .news__card--art .news__card-title {
     color: #454553;
     font-family: "Lato", sans-serif;

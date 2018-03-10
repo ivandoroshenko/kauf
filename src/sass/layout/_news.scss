@@ -99,7 +99,7 @@
         
     }
 
-    time {
+    .time {
         color: #fff;
         font-family: $base-font;
         font-size: 0.75rem;
@@ -120,9 +120,7 @@
     
 }
 
-.news__card--art {
-    width: 570px / 1170px * 100%;
-}
+
 .news__card-descr {
     background-color: #f7f7f9;
     display: flex;
@@ -154,6 +152,7 @@
 .news__image-wrapper {
     position: relative;
     border-radius: 6px;
+    width: 300px;
 }
 
 .news__card-category {
@@ -216,8 +215,8 @@
     flex-grow: 1;
 
     img {
-        height: 100%;
-        // width: 300px;
+        height: auto;
+        width: 300px;
     }
     .news__card-title {
         color: #454553;
