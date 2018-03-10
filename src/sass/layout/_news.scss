@@ -13,18 +13,15 @@
 
 .news-col-4 {
    width: 270px / 1170px * 100%;
-//    position: relative;
-   overflow: visible;
     
 }
 .news__card {
     border-radius: 6px;
-    position: relative;
-    // overflow: visible;    
+    
     margin-right: 30px;
 
     &:last-child {
-        margin-right: 0;
+        margin: 0;
     }
 
     img {
@@ -32,12 +29,18 @@
         // flex-grow: 1;
         flex-shrink: 0;
         display: block;
+        border-radius: 6px;
     }
 }
 
 // CARS
 
 .news__card--cars {
+
+    img {
+        border-radius: 6px 6px 0 0;
+    }
+
     .news__card-title {
         color: #454553;
         font-family: $base-font;
@@ -45,6 +48,7 @@
         font-weight: 700;
         padding: 0;
         margin: 0 0 9px;
+        border-radius: 6px;
     }
 
     .news__card-subtitle {
@@ -61,11 +65,9 @@
 
 // OUTDOORS
 .news__card--outdoors {
-    
+    position: relative;
 
-    img {
-        border-radius: 6px;
-    }
+    
     
     // weird circle near the heading
     .news__card-subtitle-wrapper {
@@ -118,8 +120,9 @@
     
 }
 
-
-
+.news__card--art {
+    width: 570px / 1170px * 100%;
+}
 .news__card-descr {
     background-color: #f7f7f9;
     display: flex;
@@ -127,6 +130,10 @@
     padding: 29px 20px 14px;
     width: 100%;
     
+    &--cars {
+        border-radius: 0 0 6px 6px;
+    }
+
     &--outdoors {
         padding: 0 30px 38px;
         margin-top: auto;
@@ -138,7 +145,7 @@
     }
 
     &--art {
-        width: 50%;
+        width: 270px / 1170px * 100%;
     }
 
 
@@ -146,6 +153,7 @@
 
 .news__image-wrapper {
     position: relative;
+    border-radius: 6px;
 }
 
 .news__card-category {
@@ -195,7 +203,7 @@
     &--art {
         color: #454553;
         font-weight: 700;
-        margin-bottom: 27px;
+        margin-bottom: 20px;
         span {
             background-color: #4a90e2;
         }
@@ -209,7 +217,7 @@
 
     img {
         height: 100%;
-        width: 300px;
+        // width: 300px;
     }
     .news__card-title {
         color: #454553;
@@ -217,7 +225,7 @@
         font-size: 1.375rem;
         font-weight: 700;
         padding: 0;
-        margin: 0 0 15px;
+        margin: 0 0 10px;
         max-width: 215px;
     }
 
@@ -229,7 +237,7 @@
         letter-spacing: 0.007rem;
         max-width: 215px;
         padding: 0;
-        margin: 0 0 38px;
+        margin: 0 0 25px;
         span {
             color: #4aa0d5;
         }
@@ -240,19 +248,32 @@
 .news__card-testimonials {
     display: flex;
     flex-flow: row wrap;
+    align-items: center;
     padding: 12px 12px 0;
     border-top: 1px solid #e7e7e7;
 
+    .far {
+        color: rgba(69, 69, 83, 0.5);
+        font-size: 0.875rem;
+    }
+ 
     .count {
         padding: 0;
         margin: 0;
+        color: rgba(69, 69, 83, 0.5);
+        font-family: $base-font;
+        font-size: 0.75rem;
+        font-weight: 400;
     }
-
      .count--like {
-         margin-right: 20px;
+         margin: 0 20px 0 8px;
      }  
 
      .count--comment {
-         margin-right: 40px;
+         margin: 0 37px 0 6px;
+     }
+
+     .count--time {
+         margin: 0 0 0 4px;
      }
 }

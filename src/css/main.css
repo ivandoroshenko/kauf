@@ -617,22 +617,26 @@ select {
   margin: 0; }
 
 .news-col-4 {
-  width: 23.07692%;
-  overflow: visible; }
+  width: 23.07692%; }
 
 .news__card {
   -webkit-border-radius: 6px;
           border-radius: 6px;
-  position: relative;
   margin-right: 30px; }
   .news__card:last-child {
-    margin-right: 0; }
+    margin: 0; }
   .news__card img {
     width: 100%;
     -webkit-flex-shrink: 0;
         -ms-flex-negative: 0;
             flex-shrink: 0;
-    display: block; }
+    display: block;
+    -webkit-border-radius: 6px;
+            border-radius: 6px; }
+
+.news__card--cars img {
+  -webkit-border-radius: 6px 6px 0 0;
+          border-radius: 6px 6px 0 0; }
 
 .news__card--cars .news__card-title {
   color: #454553;
@@ -640,7 +644,9 @@ select {
   font-size: 1.125rem;
   font-weight: 700;
   padding: 0;
-  margin: 0 0 9px; }
+  margin: 0 0 9px;
+  -webkit-border-radius: 6px;
+          border-radius: 6px; }
 
 .news__card--cars .news__card-subtitle {
   color: #8c8c99;
@@ -651,62 +657,60 @@ select {
   padding: 0;
   margin: 0 0 26px; }
 
-.news__card--outdoors img {
-  -webkit-border-radius: 6px;
-          border-radius: 6px; }
+.news__card--outdoors {
+  position: relative; }
+  .news__card--outdoors .news__card-subtitle-wrapper {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-flow: row nowrap;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin: 0 0 10px;
+    max-width: 168px; }
+    .news__card--outdoors .news__card-subtitle-wrapper img {
+      display: block;
+      width: 24px;
+      height: 24px;
+      -webkit-border-radius: 50%;
+              border-radius: 50%;
+      margin-right: 4px; }
+  .news__card--outdoors .news__card-subtitle {
+    padding: 0;
+    color: #fff;
+    font-family: "Lato", sans-serif;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.075rem;
+    margin-right: 6px; }
+  .news__card--outdoors time {
+    color: #fff;
+    font-family: "Lato", sans-serif;
+    font-size: 0.75rem;
+    font-weight: 400;
+    margin-right: 6px; }
+  .news__card--outdoors .news__card-title {
+    color: #fff;
+    font-family: "Lato", sans-serif;
+    font-size: 1.625rem;
+    font-weight: 400;
+    margin: 0 0 20px;
+    padding: 0;
+    max-width: 185px; }
 
-.news__card--outdoors .news__card-subtitle-wrapper {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -webkit-flex-flow: row nowrap;
-      -ms-flex-flow: row nowrap;
-          flex-flow: row nowrap;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin: 0 0 10px;
-  max-width: 168px; }
-  .news__card--outdoors .news__card-subtitle-wrapper img {
-    display: block;
-    width: 24px;
-    height: 24px;
-    -webkit-border-radius: 50%;
-            border-radius: 50%;
-    margin-right: 4px; }
-
-.news__card--outdoors .news__card-subtitle {
-  padding: 0;
-  color: #fff;
-  font-family: "Lato", sans-serif;
-  font-size: 0.75rem;
-  font-weight: 700;
-  letter-spacing: 0.075rem;
-  margin-right: 6px; }
-
-.news__card--outdoors time {
-  color: #fff;
-  font-family: "Lato", sans-serif;
-  font-size: 0.75rem;
-  font-weight: 400;
-  margin-right: 6px; }
-
-.news__card--outdoors .news__card-title {
-  color: #fff;
-  font-family: "Lato", sans-serif;
-  font-size: 1.625rem;
-  font-weight: 400;
-  margin: 0 0 20px;
-  padding: 0;
-  max-width: 185px; }
+.news__card--art {
+  width: 48.71795%; }
 
 .news__card-descr {
   background-color: #f7f7f9;
@@ -721,6 +725,9 @@ select {
           flex-flow: column wrap;
   padding: 29px 20px 14px;
   width: 100%; }
+  .news__card-descr--cars {
+    -webkit-border-radius: 0 0 6px 6px;
+            border-radius: 0 0 6px 6px; }
   .news__card-descr--outdoors {
     padding: 0 30px 38px;
     margin-top: auto;
@@ -729,10 +736,12 @@ select {
     bottom: 0;
     background: transparent; }
   .news__card-descr--art {
-    width: 50%; }
+    width: 23.07692%; }
 
 .news__image-wrapper {
-  position: relative; }
+  position: relative;
+  -webkit-border-radius: 6px;
+          border-radius: 6px; }
 
 .news__card-category {
   display: -webkit-box;
@@ -776,7 +785,7 @@ select {
   .news__card-category--art {
     color: #454553;
     font-weight: 700;
-    margin-bottom: 27px; }
+    margin-bottom: 20px; }
     .news__card-category--art span {
       background-color: #4a90e2; }
 
@@ -795,15 +804,14 @@ select {
       -ms-flex-positive: 1;
           flex-grow: 1; }
   .news__card--art img {
-    height: 100%;
-    width: 300px; }
+    height: 100%; }
   .news__card--art .news__card-title {
     color: #454553;
     font-family: "Lato", sans-serif;
     font-size: 1.375rem;
     font-weight: 700;
     padding: 0;
-    margin: 0 0 15px;
+    margin: 0 0 10px;
     max-width: 215px; }
   .news__card--art .news__card-subtitle {
     color: #454553;
@@ -813,7 +821,7 @@ select {
     letter-spacing: 0.007rem;
     max-width: 215px;
     padding: 0;
-    margin: 0 0 38px; }
+    margin: 0 0 25px; }
     .news__card--art .news__card-subtitle span {
       color: #4aa0d5; }
 
@@ -827,12 +835,25 @@ select {
   -webkit-flex-flow: row wrap;
       -ms-flex-flow: row wrap;
           flex-flow: row wrap;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 12px 12px 0;
   border-top: 1px solid #e7e7e7; }
+  .news__card-testimonials .far {
+    color: rgba(69, 69, 83, 0.5);
+    font-size: 0.875rem; }
   .news__card-testimonials .count {
     padding: 0;
-    margin: 0; }
+    margin: 0;
+    color: rgba(69, 69, 83, 0.5);
+    font-family: "Lato", sans-serif;
+    font-size: 0.75rem;
+    font-weight: 400; }
   .news__card-testimonials .count--like {
-    margin-right: 20px; }
+    margin: 0 20px 0 8px; }
   .news__card-testimonials .count--comment {
-    margin-right: 40px; }
+    margin: 0 37px 0 6px; }
+  .news__card-testimonials .count--time {
+    margin: 0 0 0 4px; }
