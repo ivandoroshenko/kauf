@@ -1,4 +1,125 @@
 .footer{
-    background-color: #2f2f2f;
-    padding: 40px 0;
+    background-color: #454553;
+    padding: 62px 100px 88px;
+    margin: 0;
+    border-radius: 6px;
+    
+    img {
+        display: block;
+    }
+
+}
+
+.footer__heading {
+    margin: 0 auto 42px;
+    padding: 0;
+    display: flex;
+    flex-flow: row nowrap;
+    background-attachment: initial;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer__title {
+    color: #fff;
+    font-family: $base-font;
+    font-size: 1.875rem;
+    font-weight: 900;
+    padding: 0;
+    margin: 0 0 0 7px;
+}
+
+.footer__main {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+
+         input[type=email] {
+        width: 224px;
+        height: 40px;
+        border-radius: 20px;
+        background-color: rgba(255, 255, 255, 0.3);
+        border: none;
+        margin: 0;
+        padding: 16px 0 16px 12px;
+        font-family: $base-font;
+        color: rgba(255, 255, 255, 0.5);
+        position: relative;
+        transition: width 0.5s ease-in-out;
+        
+
+        &:focus {
+            width: 350px;
+        }
+
+        ::-webkit-input-placeholder {color:rgba(255, 255, 255, 0.5)}
+        ::-moz-placeholder          {color:rgba(255, 255, 255, 0.5)}/* Firefox 19+ */
+        :-moz-placeholder           {color:rgba(255, 255, 255, 0.5)}/* Firefox 18- */
+        :-ms-input-placeholder      {color:rgba(255, 255, 255, 0.5)}
+    }   
+        #footer__email::-webkit-input-placeholder       {text-indent: 0px;   transition: text-indent 0.5s ease;}
+        #footer__email::-moz-placeholder                {text-indent: 0px;   transition: text-indent 0.5s ease;}
+        #footer__email:-moz-placeholder                 {text-indent: 0px;   transition: text-indent 0.5s ease;}
+        #footer__email:-ms-input-placeholder            {text-indent: 0px;   transition: text-indent 0.5s ease;}
+        #footer__email:focus::-webkit-input-placeholder {text-indent: 500px; transition: text-indent 0.5s ease;}
+        #footer__email:focus::-moz-placeholder          {text-indent: 500px; transition: text-indent 0.5s ease;}
+        #footer__email:focus:-moz-placeholder           {text-indent: 500px; transition: text-indent 0.5s ease;}
+        #footer__email:focus:-ms-input-placeholder      {text-indent: 500px; transition: text-indent 0.5s ease;}
+.footer__email-wrap {
+    display: flex;
+    align-items: center;
+    position: relative;
+    
+}
+    input[type=submit] {
+        position: absolute;
+        background: url('../img/submit-arrow.png') center right no-repeat;
+        border: none;  
+        right: 17px;
+        height: 100%;
+        width: 30px;
+        cursor: pointer;
+    }
+    
+
+}
+
+.footer__address {
+    max-width: 156px;
+   
+
+    a {
+        text-decoration: none;
+        color: #fff;
+        opacity: 0.5;
+        font-family: $base-font;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 26px;
+    }
+}
+
+.footer__social-list {
+    list-style-type: none;
+    display: flex;
+    flex-flow: row nowrap;
+    padding: 0;
+    margin: 0;
+}
+
+.footer__social-item {
+    margin-right: 25px;
+
+    &:last-child {
+        margin: 0;
+    }
+}
+
+.footer__social-link {
+    text-decoration: none;
+    display: block;
+    color: #fff;
+    opacity: 0.5;
+    font-style: 18px;
 }

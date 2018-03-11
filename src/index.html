@@ -62,7 +62,7 @@
 
                         <div class="intro__slider">
                             <div class="intro__slide">
-                                <img class="intro__img" src="img/Backgroundbur.jpg" alt="Slide1">
+                                <img class="intro__img" data-lazy="img/Backgroundbur.jpg" alt="Slide1">
                                 <div class="video__wrapper">
                                     <video id="video1" width="630" height="399" poster="img/video-preview.png">
                                         <source src="video/main-video.mp4" type="video/mp4">
@@ -76,7 +76,7 @@
                             </div>
                             
                             <div class="intro__slide">
-                                <img class="intro__img" src="img/Backgroundbur.jpg" alt="Slide1">
+                                <img class="intro__img" data-lazy="img/Backgroundbur.jpg" alt="Slide1">
                                 <div class="video__wrapper">
                                     <video id="video2" width="630" height="399" poster="img/video-preview.png">
                                         <source src="video/main-video.mp4" type="video/mp4">
@@ -90,7 +90,7 @@
                             <!-- /intro__slide -->
 
                             <div class="intro__slide">
-                                <img class="intro__img" src="img/Backgroundbur.jpg" alt="Slide1">
+                                <img class="intro__img" data-lazy="img/Backgroundbur.jpg" alt="Slide1">
                                 <div class="video__wrapper">
                                     <video id="video3" width="630" height="399" poster="img/video-preview.png">
                                         <source src="video/main-video.mp4" type="video/mp4">
@@ -133,7 +133,7 @@
                         <!-- FIRST SET -->
                         <div class="storage__slide">
                             <div class="storage__item">
-                                <img src="img/rel-item1__bag.jpg" alt="item" class="storage__item-picture">
+                                <img data-lazy="img/rel-item1__bag.jpg" alt="item" class="storage__item-picture">
                                 <div class="storage__item--descr">
                                     <a href="#" class="storage__item-status" id='new'>New</a>
                                     <h4 class="storage__item-category">Bags</h4>
@@ -145,7 +145,7 @@
 
                         <div class="storage__slide">
                             <div class="storage__item">
-                                <img src="img/rel-item2__keys.jpg" alt="item" class="storage__item-picture">
+                                <img data-lazy="img/rel-item2__keys.jpg" alt="item" class="storage__item-picture">
                                 <div class="storage__item--descr">
                                     <a href="#" class="storage__item-status" id='best'>Best Buy</a>
                                     <h4 class="storage__item-category">Accessories</h4>
@@ -157,7 +157,7 @@
 
                         <div class="storage__slide">
                             <div class="storage__item">
-                                <img src="img/rel-item3__pack.jpg" alt="item" class="storage__item-picture">
+                                <img data-lazy="img/rel-item3__pack.jpg" alt="item" class="storage__item-picture">
                                 <div class="storage__item--descr">
                                     <a href="#" class="storage__item-status" id='bio'>Bio</a>
                                     <h4 class="storage__item-category">Garden</h4>
@@ -172,7 +172,7 @@
                         <!-- SECOND SET -->
                         <div class="storage__slide">
                             <div class="storage__item">
-                                <img src="img/rel-item1__bag.jpg" alt="item" class="storage__item-picture">
+                                <img data-lazy="img/rel-item1__bag.jpg" alt="item" class="storage__item-picture">
                                 <div class="storage__item--descr">
                                     <a href="#" class="storage__item-status" id='new1'>New</a>
                                     <h4 class="storage__item-category">Bags</h4>
@@ -184,7 +184,7 @@
                         
                         <div class="storage__slide">
                             <div class="storage__item">
-                                <img src="img/rel-item2__keys.jpg" alt="item" class="storage__item-picture">
+                                <img data-lazy="img/rel-item2__keys.jpg" alt="item" class="storage__item-picture">
                                 <div class="storage__item--descr ">
                                     <a href="# " class="storage__item-status " id='best1'>Best Buy</a>
                                     <h4 class="storage__item-category ">Accessories</h4>
@@ -196,7 +196,7 @@
                         
                         <div class="storage__slide ">
                             <div class="storage__item ">
-                                <img src="img/rel-item3__pack.jpg " alt="item " class="storage__item-picture ">
+                                <img data-lazy="img/rel-item3__pack.jpg " alt="item " class="storage__item-picture ">
                                 <div class="storage__item--descr ">
                                     <a href="# " class="storage__item-status " id='bio1'>Bio</a>
                                     <h4 class="storage__item-category ">Garden</h4>
@@ -412,6 +412,39 @@
             </section>
         </main>
         <footer class="footer" id="footer">
+            <div class="footer__heading">
+                <img src="img/logo.png" alt="Hauf" class="logo">
+                <h1 class="footer__title">Kauf</h1>
+            </div>
+            <div class="footer__main">
+                <address class="footer__address">
+                    <a href="" class="footer__address-link">New York, NY 397 Weber Shoal Apt.</a>
+                    <a href="tel: +3545551234567" class="footer__address__phone-link">354 555 123 45 67</a>
+                </address>
+                <form class="footer__email-wrap">
+                <input type="email" id="footer__email" name="footer__email" placeholder="Your email.." validate>
+                <input type="submit" id="footer__email-submit" name="footer__email-submit" value="">
+                </form>
+                <ul class="footer__social-list">
+                <li class="footer__social-item">
+                    <a href="#" class="footer__social-link">
+                        <i class="fab fa-google-plus-g"></i>
+                    </a>
+                </li>
+
+                <li class="footer__social-item">
+                    <a href="#" class="footer__social-link">
+                        <i class="fab fa-dribbble"></i>
+                    </a>
+                </li>
+
+                <li class="footer__social-item">
+                    <a href="#" class="footer__social-link">
+                        <i class="fab fa-behance"></i>
+                    </a>
+                </li>
+                </ul>
+            </div>
         </footer>
     </div>
 <script src="js/libs.min.js"></script>

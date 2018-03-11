@@ -504,9 +504,6 @@ body {
   z-index: 99;
   padding: 12px 60px 12px 0;
   border-right: 1px solid #5f5f6f; }
-  .select__wrapper:hover {
-    -webkit-box-shadow: 0px 0px 3px gray;
-            box-shadow: 0px 0px 3px gray; }
 
 select {
   min-width: 82px;
@@ -520,6 +517,7 @@ select {
   font-size: 0.688rem;
   font-weight: 700;
   text-transform: uppercase;
+  cursor: pointer;
   appearance: none;
   /* remove arrow        */
   -webkit-appearance: none;
@@ -1044,5 +1042,181 @@ select {
   font-weight: 700; }
 
 .footer {
-  background-color: #2f2f2f;
-  padding: 40px 0; }
+  background-color: #454553;
+  padding: 62px 100px 88px;
+  margin: 0;
+  -webkit-border-radius: 6px;
+          border-radius: 6px; }
+  .footer img {
+    display: block; }
+
+.footer__heading {
+  margin: 0 auto 42px;
+  padding: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-flow: row nowrap;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  background-attachment: initial;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.footer__title {
+  color: #fff;
+  font-family: "Lato", sans-serif;
+  font-size: 1.875rem;
+  font-weight: 900;
+  padding: 0;
+  margin: 0 0 0 7px; }
+
+.footer__main {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-flow: row nowrap;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  .footer__main input[type=email] {
+    width: 224px;
+    height: 40px;
+    -webkit-border-radius: 20px;
+            border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border: none;
+    margin: 0;
+    padding: 16px 0 16px 12px;
+    font-family: "Lato", sans-serif;
+    color: rgba(255, 255, 255, 0.5);
+    position: relative;
+    -webkit-transition: width 0.5s ease-in-out;
+    -o-transition: width 0.5s ease-in-out;
+    transition: width 0.5s ease-in-out;
+    /* Firefox 19+ */
+    /* Firefox 18- */ }
+    .footer__main input[type=email]:focus {
+      width: 350px; }
+    .footer__main input[type=email] ::-webkit-input-placeholder {
+      color: rgba(255, 255, 255, 0.5); }
+    .footer__main input[type=email] ::-moz-placeholder {
+      color: rgba(255, 255, 255, 0.5); }
+    .footer__main input[type=email] :-moz-placeholder {
+      color: rgba(255, 255, 255, 0.5); }
+    .footer__main input[type=email] :-ms-input-placeholder {
+      color: rgba(255, 255, 255, 0.5); }
+  .footer__main #footer__email::-webkit-input-placeholder {
+    text-indent: 0px;
+    -webkit-transition: text-indent 0.5s ease;
+    -o-transition: text-indent 0.5s ease;
+    transition: text-indent 0.5s ease; }
+  .footer__main #footer__email::-moz-placeholder {
+    text-indent: 0px;
+    -webkit-transition: text-indent 0.5s ease;
+    -o-transition: text-indent 0.5s ease;
+    transition: text-indent 0.5s ease; }
+  .footer__main #footer__email:-moz-placeholder {
+    text-indent: 0px;
+    -webkit-transition: text-indent 0.5s ease;
+    -o-transition: text-indent 0.5s ease;
+    transition: text-indent 0.5s ease; }
+  .footer__main #footer__email:-ms-input-placeholder {
+    text-indent: 0px;
+    -webkit-transition: text-indent 0.5s ease;
+    -o-transition: text-indent 0.5s ease;
+    transition: text-indent 0.5s ease; }
+  .footer__main #footer__email:focus::-webkit-input-placeholder {
+    text-indent: 500px;
+    -webkit-transition: text-indent 0.5s ease;
+    -o-transition: text-indent 0.5s ease;
+    transition: text-indent 0.5s ease; }
+  .footer__main #footer__email:focus::-moz-placeholder {
+    text-indent: 500px;
+    -webkit-transition: text-indent 0.5s ease;
+    -o-transition: text-indent 0.5s ease;
+    transition: text-indent 0.5s ease; }
+  .footer__main #footer__email:focus:-moz-placeholder {
+    text-indent: 500px;
+    -webkit-transition: text-indent 0.5s ease;
+    -o-transition: text-indent 0.5s ease;
+    transition: text-indent 0.5s ease; }
+  .footer__main #footer__email:focus:-ms-input-placeholder {
+    text-indent: 500px;
+    -webkit-transition: text-indent 0.5s ease;
+    -o-transition: text-indent 0.5s ease;
+    transition: text-indent 0.5s ease; }
+  .footer__main .footer__email-wrap {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: relative; }
+  .footer__main input[type=submit] {
+    position: absolute;
+    background: url("../img/submit-arrow.png") center right no-repeat;
+    border: none;
+    right: 17px;
+    height: 100%;
+    width: 30px;
+    cursor: pointer; }
+
+.footer__address {
+  max-width: 156px; }
+  .footer__address a {
+    text-decoration: none;
+    color: #fff;
+    opacity: 0.5;
+    font-family: "Lato", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 26px; }
+
+.footer__social-list {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-flow: row nowrap;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  padding: 0;
+  margin: 0; }
+
+.footer__social-item {
+  margin-right: 25px; }
+  .footer__social-item:last-child {
+    margin: 0; }
+
+.footer__social-link {
+  text-decoration: none;
+  display: block;
+  color: #fff;
+  opacity: 0.5;
+  font-style: 18px; }
