@@ -1,0 +1,163 @@
+.video {
+    border-radius: 6px;
+    background-color: #f7f7f9;
+    margin-bottom: 27px;
+    padding: 25px 0 31px;
+}
+
+// wrapper for correct positioning slider and border of the heading 
+.video__heading-wrap {
+    margin: 0 51px 31px 51px;
+}
+.video__heading {
+    width: 100%;
+    padding: 0 19px 14px 0; 
+    border-bottom: 1px solid #e7e7e7;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+}
+.video__title-wrap {
+    display: flex;
+    flex-flow: row nowrap;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.video__title {
+    color: #454553;
+    font-family: $base-font;
+    font-size: 0.75rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.15rem;
+    justify-self: center;
+    padding: 0;
+    margin: 0 21px;
+}
+
+.autoplay-wrap {
+    label {
+        display: inline-block;
+        color: #454553;
+        font-family: $base-font;
+        font-size: 0.813rem;
+        font-weight: 700;
+        margin: 0;
+        padding: 0;
+        vertical-align: middle;
+        position: relative;
+        cursor: pointer;
+    }
+
+
+// checkbox
+input[type=checkbox] {
+    display: none;
+    position: relative;
+    margin-right: 20px;
+    height: 18px;
+    
+}
+
+// trigger field OFF mode
+input[type=checkbox] + label:before {
+    box-sizing: border-box;
+    display: inline-block;
+    vertical-align: -20%;
+    content: '';
+    width: 30px;
+    height: 18px;
+    border: 2px solid #ddd;   
+    border-radius: 9px;
+    margin-right: 4px;
+    background-color: #fbe5e5;
+}
+
+// blue trigger in OFF mode
+input[type=checkbox] + label:after {
+    position: absolute;
+    left: 4px;
+    top: 49%;
+    transform: translateY(-50%);
+    content: '';
+    width: 9px;
+    height: 9px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.35);
+    background-color: #49a0d5;
+    border-radius: 50%;
+    transition: left 0.3s ease-in-out;
+}
+        // blue trigger in OFF mode
+        input[type=checkbox]:checked + label:after {
+            left: 16px;
+            
+        }
+        
+        // trigger field in ON mode
+        input[type=checkbox]:checked + label:before {
+            background-color: transparent;
+        }
+    }   /* /--Autoplay checkbox wrapper-- */     
+
+        // slider-controls
+        .video-next,
+        .video-prev {
+              color: rgba(158, 158, 166, 0.5);
+              cursor: pointer;
+              height: 10px;
+              width: 10px;
+              font-size: 0.85rem;
+            }
+        // slider
+        .video__slider {
+            display: flex;
+            flex-flow: row nowrap;
+            width: 100%;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 50px 0 15px;
+            margin: 0 30px;
+            
+                
+        }
+        .video__slide {
+            max-width: 180px;
+            margin-right: 40px; 
+        
+            
+            &:first-child {
+                margin-left: 28px;
+            }
+
+            &:last-child {
+                margin-right: 0;
+            }
+
+            
+        }
+        .video__clip {
+            margin-bottom: 7px;
+            box-sizing: border-box;
+        }
+
+        .video__slide-title {
+            margin: 0 0 5px 0;
+            padding: 0;
+            color: #454553;
+            font-family: "$base-font";
+            font-size: 0.875rem;
+            font-weight: 900;
+        }
+
+        .video__slide-subtitle {
+            padding: 0;
+            margin: 0;
+            color: rgba(69, 69, 83, 0.5);
+            font-family: $base-font;
+            font-size: 0.75rem;
+            font-weight: 700;
+        }
