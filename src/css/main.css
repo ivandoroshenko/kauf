@@ -303,15 +303,15 @@ body {
       margin-right: 17px; }
   .nav__link {
     display: block;
-    color: #fff;
+    color: #75767a;
     font-family: "Lato", sans-serif;
     font-size: 0.75rem;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 1.2px;
     text-decoration: none; }
-    .nav__link:focused {
-      font-weight: 300; }
+    .nav__link:focus {
+      color: #fff; }
 
 .intro {
   -webkit-border-radius: 5px;
@@ -945,7 +945,6 @@ select {
   font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 0.15rem;
-  justify-self: center;
   padding: 0;
   margin: 0 21px; }
 
@@ -1241,5 +1240,6 @@ select {
   text-decoration: none;
   display: block;
   color: #fff;
-  opacity: 0.5;
-  font-style: 18px; }
+  opacity: 0.5; }
+  .footer__social-link i {
+    font-size: 23px; }

@@ -54,7 +54,7 @@
 
     &__link {
     display: block;
-    color: #fff;
+    color: #75767a;
     font-family: $base-font;
     font-size: 0.75rem;
     font-weight: 700;
@@ -62,9 +62,13 @@
     letter-spacing: 1.2px;
     text-decoration: none;
 
-        &:focused {
-            font-weight: 300;
+        &:focus {
+            color: #fff;
         }
+    }
+
+    svg {
+        
     }
     
 }
