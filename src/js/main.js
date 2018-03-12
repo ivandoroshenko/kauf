@@ -18,9 +18,9 @@ $(function() {
         infinite: false,
         autoplay: false,
         autoplaySpeed: 2000,
-        speed: 700,
+        speed: 500,
         fade: false,
-        cssEase: 'linear',
+        cssEase: 'ease-in-out',
         adaptiveHeight: false,
         prevArrow: $('.prev'),
         nextArrow: $('.next')
@@ -35,9 +35,9 @@ $(function() {
         infinite: true,
         autoplay: false,
         autoplaySpeed: 2000,
-        speed: 700,
+        speed: 600,
         fade: false,
-        cssEase: 'linear',
+        cssEase: 'ease-out',
         adaptiveHeight: false,
         prevArrow: $('.storage-prev'),
         nextArrow: $('.storage-next')
@@ -54,7 +54,7 @@ $(function() {
         autoplaySpeed: 2000,
         speed: 700,
         fade: false,
-        cssEase: 'linear',
+        cssEase: 'ease-in-out',
         adaptiveHeight: false,
         prevArrow: $('.video-prev'),
         nextArrow: $('.video-next')
