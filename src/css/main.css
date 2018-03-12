@@ -58,7 +58,17 @@ body {
   font-family: "Lato", sans-serif;
   color: #fff;
   font-size: 0.875rem;
-  padding: 17px 33px; }
+  padding: 17px 33px;
+  -webkit-transition: color, background-color, -webkit-box-shadow 0.7s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: color, background-color, -webkit-box-shadow 0.7s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  -o-transition: color, background-color, box-shadow 0.7s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: color, background-color, box-shadow 0.7s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: color, background-color, box-shadow 0.7s cubic-bezier(0.175, 0.885, 0.32, 1.275), -webkit-box-shadow 0.7s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
+  .btn--video:hover {
+    background-color: #fff;
+    color: #ced3da;
+    -webkit-box-shadow: 0 10px 20px rgba(168, 173, 187, 0.8);
+            box-shadow: 0 10px 20px rgba(168, 173, 187, 0.8); }
 
 .intro__slider {
   position: relative;
@@ -206,7 +216,17 @@ body {
   font-family: "Lato", sans-serif;
   color: #fff;
   font-size: 0.875rem;
-  padding: 17px 33px; }
+  padding: 17px 33px;
+  -webkit-transition: color, background-color, -webkit-box-shadow 0.7s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: color, background-color, -webkit-box-shadow 0.7s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  -o-transition: color, background-color, box-shadow 0.7s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: color, background-color, box-shadow 0.7s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: color, background-color, box-shadow 0.7s cubic-bezier(0.175, 0.885, 0.32, 1.275), -webkit-box-shadow 0.7s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
+  .btn--video:hover {
+    background-color: #fff;
+    color: #ced3da;
+    -webkit-box-shadow: 0 10px 20px rgba(168, 173, 187, 0.8);
+            box-shadow: 0 10px 20px rgba(168, 173, 187, 0.8); }
 
 .header {
   position: absolute;
@@ -1120,8 +1140,6 @@ select {
     transition: width 0.5s ease-in-out;
     /* Firefox 19+ */
     /* Firefox 18- */ }
-    .footer__main input[type=email]:focus {
-      width: 350px; }
     .footer__main input[type=email] ::-webkit-input-placeholder {
       color: rgba(255, 255, 255, 0.5); }
     .footer__main input[type=email] ::-moz-placeholder {

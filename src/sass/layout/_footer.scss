@@ -49,9 +49,7 @@
         transition: width 0.5s ease-in-out;
         
 
-        &:focus {
-            width: 350px;
-        }
+        
 
         ::-webkit-input-placeholder {color:rgba(255, 255, 255, 0.5)}
         ::-moz-placeholder          {color:rgba(255, 255, 255, 0.5)}/* Firefox 19+ */
@@ -66,6 +64,7 @@
         #footer__email:focus::-moz-placeholder          {text-indent: 500px; transition: text-indent 0.5s ease;}
         #footer__email:focus:-moz-placeholder           {text-indent: 500px; transition: text-indent 0.5s ease;}
         #footer__email:focus:-ms-input-placeholder      {text-indent: 500px; transition: text-indent 0.5s ease;}
+        
 .footer__email-wrap {
     display: flex;
     align-items: center;
