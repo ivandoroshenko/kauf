@@ -6,6 +6,7 @@ html, body {
   width: 100%;
   min-height: 100vh; }
 
+html,
 body {
   display: -webkit-box;
   display: -webkit-flex;
@@ -18,6 +19,10 @@ body {
           flex-direction: column;
   background: #cbced2;
   background-attachment: fixed;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 30px 0; }
 
 .maincontent {
@@ -1000,7 +1005,7 @@ select {
   -webkit-flex-flow: row nowrap;
       -ms-flex-flow: row nowrap;
           flex-flow: row nowrap;
-  width: 100%;
+  max-width: 100%;
   -webkit-box-align: center;
   -webkit-align-items: center;
       -ms-flex-align: center;

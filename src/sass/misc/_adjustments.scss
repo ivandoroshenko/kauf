@@ -11,11 +11,13 @@ html, body{
 
 }
 
+html,
 body{
     display: flex;
     flex-direction: column;
     background: #cbced2;
     background-attachment: fixed;
+    align-items: center;
     padding: 30px 0;
 }
 
@@ -30,5 +32,7 @@ body{
     padding: 0;
     border-radius: 6px; 
     border: none;
+
+
 }
 

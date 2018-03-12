@@ -116,7 +116,7 @@ input[type=checkbox] + label:after {
         .video__slider { 
             display: flex;
             flex-flow: row nowrap;
-            width: 100%;
+            max-width: 100%;
             align-items: center;
             justify-content: space-between;
             padding: 0 50px 0 15px;
