@@ -82,7 +82,7 @@ $(function() {
      
     }); 
 
-    $('#video1, #video2, #video3').click(function (event) {
+    $('video').click(function (event) {
         this.paused ? this.play() : this.pause();
     });
 
