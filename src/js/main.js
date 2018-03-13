@@ -74,7 +74,7 @@ $(function() {
         console.log($(document).scrollTop());
         if (($(document).scrollTop() > 130)) {
             
-            $('.header').addClass('header-fixed'); 
+            
            
         } else
         $('.header').removeClass('header-fixed');
@@ -83,8 +83,19 @@ $(function() {
     }); 
 
     $('video').click(function (event) {
-        this.paused ? this.play() : this.pause();
+        this.paused ? this.play(): this.pause();
+        
+        
     });
+
+    $('video').click(function (event) {
+        var getHref = $(this).attr('id');
+        $(getHref).controls = 'true';
+        console.log(getHref);
+    });
+
+
+
 
     
 
