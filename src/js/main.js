@@ -11,6 +11,7 @@ $(function() {
         }, 1000);
     });
 
+    // BIG SLIDER
     $('.intro__slider').slick({
        
         dots: true,
@@ -26,6 +27,7 @@ $(function() {
         nextArrow: $('.next')
     });
 
+    //MIDDLE SLIDER WITH THE GOODS 
     $('.storage__slider').slick({
 
         dots: false,
@@ -43,6 +45,7 @@ $(function() {
         nextArrow: $('.storage-next')
     });
 
+    // BOTTOM SLIDER WITH VIDEO
     $('.video__slider').slick({
 
         dots: false,

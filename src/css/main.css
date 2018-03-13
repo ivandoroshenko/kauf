@@ -73,7 +73,7 @@ body {
 .intro__slider {
   position: relative;
   text-align: center;
-  width: 100%;
+  max-width: 100%;
   height: auto;
   padding: 0;
   margin: 0; }
@@ -1046,6 +1046,8 @@ select {
 
 .video__clip {
   margin-bottom: 7px;
+  -webkit-border-radius: 6px;
+          border-radius: 6px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
 
