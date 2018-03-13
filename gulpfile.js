@@ -103,4 +103,7 @@ var buildJs = gulp.src('src/js/**/*')
 
 var buildHtml = gulp.src('src/*.html')
     .pipe(gulp.dest('dist'));
+
+var buildVideo = gulp.src('src/video/**/*')
+    .pipe(gulp.dest('dist/video'));
 });

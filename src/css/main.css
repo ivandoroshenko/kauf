@@ -73,7 +73,7 @@ body {
 .intro__slider {
   position: relative;
   text-align: center;
-  width: 100%;
+  max-width: 100%;
   height: auto;
   padding: 0;
   margin: 0; }
@@ -1046,6 +1046,8 @@ select {
 
 .video__clip {
   margin-bottom: 7px;
+  -webkit-border-radius: 6px;
+          border-radius: 6px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
 
@@ -1121,32 +1123,31 @@ select {
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
-          justify-content: space-between; }
+          justify-content: space-between;
+  /* Firefox 19+ */
+  /* Firefox 18- */ }
   .footer__main input[type=email] {
     width: 224px;
-    height: 40px;
     -webkit-border-radius: 20px;
             border-radius: 20px;
     background-color: rgba(255, 255, 255, 0.3);
     border: none;
     margin: 0;
-    padding: 16px 0 16px 12px;
+    padding: 12px;
     font-family: "Lato", sans-serif;
     color: rgba(255, 255, 255, 0.5);
     position: relative;
     -webkit-transition: width 0.5s ease-in-out;
     -o-transition: width 0.5s ease-in-out;
-    transition: width 0.5s ease-in-out;
-    /* Firefox 19+ */
-    /* Firefox 18- */ }
-    .footer__main input[type=email] ::-webkit-input-placeholder {
-      color: rgba(255, 255, 255, 0.5); }
-    .footer__main input[type=email] ::-moz-placeholder {
-      color: rgba(255, 255, 255, 0.5); }
-    .footer__main input[type=email] :-moz-placeholder {
-      color: rgba(255, 255, 255, 0.5); }
-    .footer__main input[type=email] :-ms-input-placeholder {
-      color: rgba(255, 255, 255, 0.5); }
+    transition: width 0.5s ease-in-out; }
+  .footer__main #footer__email::-webkit-input-placeholder {
+    color: #ffffff80; }
+  .footer__main #footer__email::-moz-placeholder {
+    color: #ffffff80; }
+  .footer__main #footer__email:-moz-placeholder {
+    color: #ffffff80; }
+  .footer__main #footer__email:-ms-input-placeholder {
+    color: #ffffff80; }
   .footer__main #footer__email::-webkit-input-placeholder {
     text-indent: 0px;
     -webkit-transition: text-indent 0.5s ease;
@@ -1196,13 +1197,17 @@ select {
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center;
-    position: relative; }
+    position: relative;
+    border: none; }
   .footer__main input[type=submit] {
     position: absolute;
     background: url("../img/submit-arrow.png") center right no-repeat;
     border: none;
     right: 17px;
-    height: 100%;
+    top: 50%;
+    -webkit-transform: translatey(-50%);
+        -ms-transform: translatey(-50%);
+            transform: translatey(-50%);
     width: 30px;
     cursor: pointer; }
 
