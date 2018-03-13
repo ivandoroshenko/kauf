@@ -66,9 +66,9 @@ body {
   transition: color, background-color, box-shadow 0.7s cubic-bezier(0.175, 0.885, 0.32, 1.275), -webkit-box-shadow 0.7s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
   .btn--video:hover {
     background-color: #fff;
-    color: #ced3da;
-    -webkit-box-shadow: 0 10px 20px rgba(168, 173, 187, 0.8);
-            box-shadow: 0 10px 20px rgba(168, 173, 187, 0.8); }
+    color: #7b91af;
+    -webkit-box-shadow: 0 5px 20px rgba(168, 173, 187, 0.8);
+            box-shadow: 0 5px 20px rgba(168, 173, 187, 0.8); }
 
 .intro__slider {
   position: relative;
@@ -224,9 +224,9 @@ body {
   transition: color, background-color, box-shadow 0.7s cubic-bezier(0.175, 0.885, 0.32, 1.275), -webkit-box-shadow 0.7s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
   .btn--video:hover {
     background-color: #fff;
-    color: #ced3da;
-    -webkit-box-shadow: 0 10px 20px rgba(168, 173, 187, 0.8);
-            box-shadow: 0 10px 20px rgba(168, 173, 187, 0.8); }
+    color: #7b91af;
+    -webkit-box-shadow: 0 5px 20px rgba(168, 173, 187, 0.8);
+            box-shadow: 0 5px 20px rgba(168, 173, 187, 0.8); }
 
 .header {
   position: absolute;
