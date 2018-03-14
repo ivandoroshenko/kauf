@@ -63,7 +63,7 @@ $(function() {
             {
               breakpoint: 1025,
               settings: {
-                slidesToShow: 2,
+                slidesToShow: 3,
                 slidesToScroll: 2
 
               }
@@ -94,21 +94,38 @@ $(function() {
      
     }); 
 
+    // VIDEO PLAY PAUSE
     $('video').click(function (event) {
         this.paused ? this.play(): this.pause();
-        
-        
+             
     });
 
-    $('video').click(function (event) {
-        var getHref = $(this).attr('id');
-        $(getHref).controls = 'true';
-        console.log(getHref);
+    // ADDING COMTROLS TO VIDEO
+ $(document).click(function (event) {
+        vid = event.target;
+       
+        if ($(vid).attr("controls", false) && ($(vid).hasClass("video__clip")) || ($(vid).hasClass("top__video")) ) {
+         $(vid).prop("controls", true);
+
+           
+            
+        } 
     });
 
+    // VIDEO DURATION ====
+    var video = $('#video__clip0')[0];
+    var t = setInterval(function () {
+        if (video.readyState > 0) {
+            var duration = video.duration;
+            var roundDuration = Math.floor(duration);
+            // console.log(Math.floor(roundDuration / 60) + ':' + roundDuration % 60);
+            $('#videoDurClip0').text(Math.floor(roundDuration / 60) + ':' + '0' + roundDuration % 60);
+            clearInterval(t);
+            console.log(Math.floor(roundDuration / 60) + ':' + (roundDuration % 60 > 10 ? '0' : '') + roundDuration % 60);
+        }
+    }, 500);
 
-
-
+    
     
 
     // $(document).bind("click keydown", function (event) {
