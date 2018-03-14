@@ -1,0 +1,6 @@
+List of the used breakpoints
+
+max-width: 1170px
+ax-width: 1024px
+        
+    

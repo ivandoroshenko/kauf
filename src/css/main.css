@@ -17,13 +17,17 @@ body {
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
-  background: #cbced2;
-  background-attachment: fixed;
   -webkit-box-align: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
-          align-items: center;
-  padding: 30px 0; }
+          align-items: center; }
+
+body {
+  padding: 30px 0;
+  background: #cbced2; }
+  @media screen and (max-width: 1170px) {
+    body {
+      padding: 0; } }
 
 .maincontent {
   -webkit-box-flex: 1;
@@ -39,6 +43,18 @@ body {
   -webkit-border-radius: 6px;
           border-radius: 6px;
   border: none; }
+  @media screen and (max-width: 1170px) {
+    .container {
+      max-width: 100%;
+      padding: 15px; } }
+
+@media screen and (max-width: 1024px) {
+  .intro,
+  .news,
+  .paginator,
+  .storage,
+  .video {
+    margin-bottom: 20px; } }
 
 .btn {
   text-transform: uppercase;
@@ -77,6 +93,10 @@ body {
   height: auto;
   padding: 0;
   margin: 0; }
+
+@media screen and (max-width: 1024px) {
+  .slick-dotted.slick-slider {
+    margin-bottom: 0; } }
 
 .intro__slide {
   position: relative;
@@ -323,6 +343,9 @@ body {
   padding: 0;
   margin: 0;
   position: relative; }
+  @media screen and (max-width: 1024px) {
+    .intro {
+      margin-bottom: 20px; } }
 
 .intro__title {
   display: none; }
@@ -353,6 +376,9 @@ body {
           align-items: center;
   width: 100%;
   margin: 0 0 30px; }
+  @media screen and (max-width: 1024px) {
+    .storage {
+      margin-bottom: 20px; } }
 
 .storage__heading {
   display: -webkit-box;
@@ -493,6 +519,9 @@ body {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center; }
+  @media screen and (max-width: 1024px) {
+    .select {
+      margin-bottom: 20px; } }
 
 .select__title {
   padding: 0;
@@ -529,6 +558,9 @@ body {
   z-index: 99;
   padding: 12px 60px 12px 0;
   border-right: 1px solid #5f5f6f; }
+  @media screen and (max-width: 1024px) {
+    .select__wrapper {
+      padding-right: 30px; } }
 
 select {
   min-width: 82px;
@@ -582,6 +614,9 @@ select {
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between; }
+  @media screen and (max-width: 1024px) {
+    .sort__list {
+      padding: 0 15px; } }
 
 .sort__link {
   text-decoration: none;
@@ -633,7 +668,10 @@ select {
       -ms-flex-pack: center;
           justify-content: center;
   width: 100%;
-  margin-bottom: 27px; }
+  margin: 0 0 27px 0; }
+  @media screen and (max-width: 1024px) {
+    .news {
+      margin-bottom: 20px; } }
 
 .news__title {
   display: none;
@@ -643,6 +681,10 @@ select {
 .news-col-4 {
   width: 23.07692%;
   min-width: 270px; }
+  @media screen and (max-width: 1024px) {
+    .news-col-4 {
+      width: 23.07692%;
+      min-width: 235px; } }
 
 .news__card {
   -webkit-border-radius: 6px;
@@ -661,11 +703,18 @@ select {
     display: block;
     -webkit-border-radius: 6px;
             border-radius: 6px; }
+  @media screen and (max-width: 1024px) {
+    .news__card {
+      margin-right: 20px; } }
 
 .news__card--cars img {
   -webkit-border-radius: 6px 6px 0 0;
           border-radius: 6px 6px 0 0;
   max-height: 229px; }
+  @media screen and (max-width: 1024px) {
+    .news__card--cars img {
+      max-height: 173px;
+      width: 80%; } }
 
 .news__card--cars .news__card-title {
   color: #454553;
@@ -750,6 +799,9 @@ select {
       -ms-flex-flow: column wrap;
           flex-flow: column wrap;
   padding: 29px 20px 14px; }
+  @media screen and (max-width: 1024px) {
+    .news__card-descr {
+      padding: 20px 20px 10px; } }
   .news__card-descr--cars {
     -webkit-border-radius: 0 0 6px 6px;
             border-radius: 0 0 6px 6px; }
@@ -814,6 +866,9 @@ select {
     margin-bottom: 15px; }
     .news__card-category--art span {
       background-color: #4a90e2; }
+    @media screen and (max-width: 1024px) {
+      .news__card-category--art {
+        margin-bottom: 10px; } }
 
 .news__card--art {
   display: -webkit-box;
@@ -842,6 +897,10 @@ select {
     padding: 0;
     margin: 0 0 10px;
     max-width: 215px; }
+    @media screen and (max-width: 1024px) {
+      .news__card--art .news__card-title {
+        margin-bottom: 12px;
+        font-size: 1.25rem; } }
   .news__card--art .news__card-subtitle {
     color: #454553;
     font-family: "Lato", sans-serif;
@@ -854,6 +913,11 @@ select {
     margin: 0 0 25px; }
     .news__card--art .news__card-subtitle span {
       color: #4aa0d5; }
+    @media screen and (max-width: 1024px) {
+      .news__card--art .news__card-subtitle {
+        font-size: 1rem;
+        line-height: 22px;
+        margin-bottom: 12px; } }
 
 .news__card-testimonials {
   display: -webkit-box;
@@ -862,9 +926,9 @@ select {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -webkit-flex-flow: row wrap;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
+  -webkit-flex-flow: row nowrap;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
   -webkit-box-align: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
@@ -885,15 +949,22 @@ select {
     margin: 0 20px 0 8px; }
   .news__card-testimonials .count--comment {
     margin: 0 37px 0 6px; }
+    @media screen and (max-width: 1024px) {
+      .news__card-testimonials .count--comment {
+        margin-right: 15px; } }
   .news__card-testimonials .count--time {
-    margin: 0 0 0 4px; }
+    margin: 0 0 0 4px;
+    white-space: nowrap; }
 
 .video {
   -webkit-border-radius: 6px;
           border-radius: 6px;
   background-color: #f7f7f9;
-  margin-bottom: 27px;
+  margin: 0 0 27px 0;
   padding: 25px 0 31px; }
+  @media screen and (max-width: 1024px) {
+    .video {
+      margin-bottom: 20px; } }
 
 .video__heading-wrap {
   margin: 0 51px 31px 51px; }
@@ -1041,6 +1112,9 @@ select {
   margin-right: 40px; }
   .video__slide:first-child {
     margin-left: 28px; }
+    @media screen and (max-width: 1024px) {
+      .video__slide:first-child {
+        margin-left: 20px; } }
   .video__slide:last-child {
     margin-right: 0; }
 

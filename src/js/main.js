@@ -59,8 +59,20 @@ $(function() {
         fade: false,
         cssEase: 'ease-in-out',
         adaptiveHeight: false,
+        responsive: [
+            {
+              breakpoint: 1025,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2
+
+              }
+            }
+        ],
         prevArrow: $('.video-prev'),
-        nextArrow: $('.video-next')
+        nextArrow: $('.video-next'),
+
+       
     });
    
 

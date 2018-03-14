@@ -7,6 +7,10 @@
     flex-flow: row nowrap;
     justify-content: space-between;
     align-items: center;
+
+    @media screen and (max-width: 1024px) {
+        margin-bottom: 20px;
+    }
    
 }
 
@@ -36,6 +40,9 @@
     padding: 12px 60px 12px 0;
     border-right: 1px solid #5f5f6f;
     
+    @media screen and (max-width: 1024px) {
+        padding-right: 30px;
+    }
     
     
     }
@@ -82,6 +89,10 @@
     flex-grow: 1;
     list-style-type: none;
     justify-content: space-between;
+
+    @media screen and (max-width: 1024px) {
+        padding: 0 15px;
+    }
 
      
 }

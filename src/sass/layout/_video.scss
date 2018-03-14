@@ -1,8 +1,12 @@
 .video {
     border-radius: 6px;
     background-color: #f7f7f9;
-    margin-bottom: 27px;
+    margin: 0 0 27px 0;
     padding: 25px 0 31px;
+
+    @media screen and (max-width: 1024px) {
+        margin-bottom: 20px;
+    }
 }
 
 // wrapper for correct positioning slider and border of the heading 
@@ -130,6 +134,11 @@ input[type=checkbox] + label:after {
             
             &:first-child {
                 margin-left: 28px;
+
+                @media screen and (max-width: 1024px) {
+                    margin-left: 20px;
+                }
+
             }
 
             &:last-child {

@@ -9,6 +9,13 @@
     
 }
 
+.slick-dotted.slick-slider {
+    @media screen and (max-width: 1024px) {
+        margin-bottom: 0;
+    }
+    
+}
+
 
 .intro__slide {
     position: relative;
