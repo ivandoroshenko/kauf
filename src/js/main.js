@@ -63,9 +63,24 @@ $(function() {
             {
               breakpoint: 1025,
               settings: {
-                slidesToShow: 3.5,
+                slidesToShow: 4,
+                slidesToScroll: 3,
+                infinite: true,
+                dots: true
+              }
+            },
+            {
+              breakpoint: 600,
+              settings: {
+                slidesToShow: 2,
                 slidesToScroll: 2
-
+              }
+            },
+            {
+              breakpoint: 480,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
               }
             }
         ],
@@ -148,10 +163,10 @@ $(function() {
                 console.log(duration);
                 var roundDuration = Math.floor(duration);
                 let addCount = '';
-                if (roundDuration % 60 > 10) {
+                if (roundDuration % 60 < 10) {
                     addCount = '0'
                 }
-                else addCount = '0'
+                else addCount = ''
                 // console.log(addCount);
                 // console.log(Math.floor(roundDuration / 60) + ':' + addCount + roundDuration % 60);
                 $('#videoDurClip' + i).text(Math.floor(roundDuration / 60) + ':' + addCount + roundDuration % 60);
