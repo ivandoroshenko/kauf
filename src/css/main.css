@@ -1100,22 +1100,40 @@ select {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding: 0 50px 0 15px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0 30px 0 30px;
   margin: 0 30px; }
+  @media screen and (max-width: 1024px) {
+    .video__slider {
+      margin: 0;
+      padding: 0; } }
 
 .video__slide {
-  max-width: 180px;
-  margin-right: 40px;
+  margin: 0;
+  padding: 0 15px 0 15px;
   position: relative; }
-  .video__slide:before {
+  @media screen and (max-width: 1024px) {
+    .video__slide {
+      padding: 0 15px;
+      margin: 0 15px;
+      max-width: 220px; } }
+  @media screen and (max-width: 1024px) {
+    .video__slide:first-child {
+      margin-left: 30px; } }
+  .video__slide:last-child {
+    margin-right: 0; }
+
+.video-wrapper {
+  position: relative;
+  margin-bottom: 7px; }
+  .video-wrapper:before {
     content: '';
     position: absolute;
-    top: 38%;
-    left: 53%;
+    top: 50%;
+    left: 50%;
     background: url("../img/play-icon-small.png") center center no-repeat;
     -webkit-transform: translate(-50%, -50%);
         -ms-transform: translate(-50%, -50%);
@@ -1127,20 +1145,13 @@ select {
             border-radius: 50%;
     z-index: 3;
     pointer-events: none; }
-  .video__slide:first-child {
-    margin-left: 28px; }
-    @media screen and (max-width: 1024px) {
-      .video__slide:first-child {
-        margin-left: 20px; } }
-  .video__slide:last-child {
-    margin-right: 0; }
 
 .video-duration {
   position: absolute;
   min-width: 40px;
   text-align: center;
   top: 8px;
-  right: 0px;
+  right: 8px;
   -webkit-border-radius: 3px;
           border-radius: 3px;
   background-color: rgba(34, 34, 37, 0.5);
@@ -1153,7 +1164,6 @@ select {
   font-weight: 700; }
 
 .video__clip {
-  margin-bottom: 7px;
   -webkit-border-radius: 6px;
           border-radius: 6px;
   -webkit-box-sizing: border-box;

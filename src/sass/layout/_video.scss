@@ -121,43 +121,43 @@ input[type=checkbox] + label:after {
             flex-flow: row nowrap;
             max-width: 100%;
             align-items: center;
-            justify-content: space-between;
-            padding: 0 50px 0 15px;
+            justify-content: center;
+            padding: 0 30px 0 30px;
             margin: 0 30px;
+
+            @media screen and (max-width: 1024px) {
+                margin: 0;
+                padding: 0;  
+            }
+
             
                 
         }
         .video__slide {
-            max-width: 180px;
-            margin-right: 40px;
+            // max-width: 220px;
+            margin: 0;
+            padding: 0 15px 0 15px;
             position: relative;
-            
-            &:before{
-                content: '';
-                position: absolute;
-                top: 38%;
-                left: 53%;
-                background: url('../img/play-icon-small.png') center center no-repeat;
-                transform: translate(-50%, -50%);
-                width: 40px;
-                height: 40px;
-                border: 2px solid #fff;
-                border-radius: 50%;
-                z-index: 3;
-                pointer-events: none;
-                
-                               
+
+            @media screen and (max-width: 1024px) {
+                padding: 0 15px;
+                margin: 0 15px;
+                max-width: 220px;
+
             }
+
+            
+           
 
             
             
         
             
             &:first-child {
-                margin-left: 28px;
+                // margin-left: 28px;
 
                 @media screen and (max-width: 1024px) {
-                    margin-left: 20px;
+                    margin-left: 30px;
                 }
 
             }
@@ -169,12 +169,34 @@ input[type=checkbox] + label:after {
                      
         }
 
+        .video-wrapper {
+            position: relative;
+            margin-bottom: 7px;
+
+            &:before{
+                content: '';
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                background: url('../img/play-icon-small.png') center center no-repeat;
+                transform: translate(-50%, -50%);
+                width: 40px;
+                height: 40px;
+                border: 2px solid #fff;
+                border-radius: 50%;
+                z-index: 3;
+                pointer-events: none;
+                
+                               
+            }
+        }
+
         .video-duration {
             position: absolute;
             min-width: 40px;
             text-align: center;
             top: 8px;
-            right: 0px;
+            right: 8px;
             border-radius: 3px;
             background-color: rgba(34, 34, 37, 0.5);
             z-index: 2;
@@ -192,7 +214,7 @@ input[type=checkbox] + label:after {
 
        
         .video__clip {
-            margin-bottom: 7px;
+            
             border-radius: 6px;
             box-sizing: border-box;
             position: relative;
