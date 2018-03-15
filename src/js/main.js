@@ -105,7 +105,7 @@ $(function() {
 
     //dropdown header
     $(document).scroll(function () {
-        console.log($(document).scrollTop());
+        // console.log($(document).scrollTop());
         if (($(document).scrollTop() > 130)) {
             
             
@@ -122,7 +122,7 @@ $(function() {
              
     });
 
-    // ADDING COMTROLS TO VIDEO
+    // ADDING CONTROLS TO VIDEO
  $(document).click(function (event) {
         vid = event.target;
        
@@ -135,48 +135,12 @@ $(function() {
     });
 
         // VIDEO DURATION ====
-        // var video = $('#video__clip0')[0];
-        // var t = setInterval(function () {
-        //     if (video.readyState > 0) {
-        //         var duration = video.duration;
-        //         var roundDuration = Math.floor(duration);
-        //         let addCount = '';
-        //         if (roundDuration % 60 > 10) {
-        //             addCount = '0'
-        //         }
-        //         else addCount = '0'
-        //         console.log(Math.floor(roundDuration / 60) + ':' + addCount + roundDuration % 60);
-        //         $('#videoDurClip0').text(Math.floor(roundDuration / 60) + ':' + addCount + roundDuration % 60);
-        //         clearInterval(t);
-        //     }
-        // }, 500);
-    
-
-
-    for (i = 0; i < document.getElementsByClassName('video__clip').length; i++) {
-        var video = document.getElementsByClassName('video__clip')[i];
-        console.log(video); 
-        var t = setInterval(function () {
+        
+      
+                
+                
+        
             
-            if (video.readyState > 0) {
-                var duration = video.duration;
-                console.log(duration);
-                var roundDuration = Math.floor(duration);
-                let addCount = '';
-                if (roundDuration % 60 < 10) {
-                    addCount = '0'
-                }
-                else addCount = ''
-                // console.log(addCount);
-                // console.log(Math.floor(roundDuration / 60) + ':' + addCount + roundDuration % 60);
-                $('#videoDurClip' + i).text(Math.floor(roundDuration / 60) + ':' + addCount + roundDuration % 60);
-                clearInterval(t);
-                console.log('#videoDurClip' + i);
-            }
-        }, 500);
-
-    }
-    
 
     // $(document).bind("click keydown", function (event) {
     //     closeModal = event.target;
@@ -191,7 +155,7 @@ $(function() {
     //button up
     $(document).click(function (event) {
         btnUp = event.target;
-        console.log(event.target);
+        // console.log(event.target);
         if ($(btnUp.parentNode).hasClass('btn-up') ) {
             $('body, html').animate({ 'scrollTop': 0 }, 1000);
         }
@@ -207,5 +171,28 @@ $(function() {
     
     
 }); 
+
+
+    for (i = 0; i < document.getElementsByClassName('video__clip').length; i++) {
+        var video = document.getElementsByClassName('video__clip')[i];
+        video.addEventListener('loadedmetadata', function() {
+            console.log(video.duration);
+        });
+            // console.log($(video).length);
+            var duration = $(video).duration;
+            console.log(duration);
+            var roundDuration = Math.floor(duration);
+            let addCount = '';
+            if (roundDuration % 60 < 10) {
+                addCount = '0'
+            }
+            else addCount = ''
+            // console.log(addCount);
+            // console.log(Math.floor(roundDuration / 60) + ':' + addCount + roundDuration % 60);
+            $('#videoDurClip' + i).text(Math.floor(roundDuration / 60) + ':' + addCount + roundDuration % 60);
+
+            // console.log('#videoDurClip' + i);   
+    
+}
 
 
