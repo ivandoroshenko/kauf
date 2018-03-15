@@ -137,7 +137,7 @@ $(function() {
         // }, 500);
     
 
-
+        
     for (i = 0; i < document.getElementsByClassName('video__clip').length; i++) {
         var video = document.getElementsByClassName('video__clip')[i];
         console.log(video); 
