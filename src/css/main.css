@@ -1111,18 +1111,53 @@ select {
   max-width: 220px;
   margin: 0;
   padding: 0 15px 0 15px; }
+  .video__slide:before {
+    content: '';
+    position: absolute;
+    top: 38%;
+    left: 53%;
+    background: url("../img/play-icon-small.png") center center no-repeat;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    width: 40px;
+    height: 40px;
+    border: 2px solid #fff;
+    -webkit-border-radius: 50%;
+            border-radius: 50%;
+    z-index: 3;
+    pointer-events: none; }
   @media screen and (max-width: 1024px) {
     .video__slide:first-child {
       margin-left: 20px; } }
   .video__slide:last-child {
     margin-right: 0; }
 
+.video-duration {
+  position: absolute;
+  min-width: 40px;
+  text-align: center;
+  top: 8px;
+  right: 0px;
+  -webkit-border-radius: 3px;
+          border-radius: 3px;
+  background-color: rgba(34, 34, 37, 0.5);
+  z-index: 2;
+  margin: 0;
+  padding: 5px 6px;
+  color: #fff;
+  font-family: "Lato", sans-serif;
+  font-size: 0.625rem;
+  font-weight: 700; }
+
 .video__clip {
   margin-bottom: 7px;
   -webkit-border-radius: 6px;
           border-radius: 6px;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box; }
+          box-sizing: border-box;
+  position: relative;
+  cursor: pointer; }
 
 .video__slide-title {
   margin: 0 0 5px 0;

@@ -52,8 +52,8 @@ $(function() {
         arrows: true,
         slidesToShow: 5,
         slidesToScroll: 2,
-        infinite: true,
-        autoplay: false,
+        infinite: false,
+        autoplay: false,    
         autoplaySpeed: 2000,
         speed: 700,
         fade: false,
@@ -63,7 +63,7 @@ $(function() {
             {
               breakpoint: 1025,
               settings: {
-                slidesToShow: 2,
+                slidesToShow: 3.5,
                 slidesToScroll: 2
 
               }
@@ -74,7 +74,14 @@ $(function() {
 
        
     });
-   
+
+    $('#autoplay').prop("checked", function () {
+        $('video__slider').slick({
+            autoplay: true
+        })
+    });
+    
+ 
 
 
     // $('.parallax-window').parallax({ 
@@ -94,21 +101,66 @@ $(function() {
      
     }); 
 
+    // VIDEO PLAY PAUSE
     $('video').click(function (event) {
         this.paused ? this.play(): this.pause();
-        
-        
+             
     });
 
-    $('video').click(function (event) {
-        var getHref = $(this).attr('id');
-        $(getHref).controls = 'true';
-        console.log(getHref);
+    // ADDING COMTROLS TO VIDEO
+ $(document).click(function (event) {
+        vid = event.target;
+       
+        if ($(vid).attr("controls", false) && ($(vid).hasClass("video__clip")) || ($(vid).hasClass("top__video")) ) {
+         $(vid).prop("controls", true);
+
+           
+            
+        } 
     });
 
+        // VIDEO DURATION ====
+        // var video = $('#video__clip0')[0];
+        // var t = setInterval(function () {
+        //     if (video.readyState > 0) {
+        //         var duration = video.duration;
+        //         var roundDuration = Math.floor(duration);
+        //         let addCount = '';
+        //         if (roundDuration % 60 > 10) {
+        //             addCount = '0'
+        //         }
+        //         else addCount = '0'
+        //         console.log(Math.floor(roundDuration / 60) + ':' + addCount + roundDuration % 60);
+        //         $('#videoDurClip0').text(Math.floor(roundDuration / 60) + ':' + addCount + roundDuration % 60);
+        //         clearInterval(t);
+        //     }
+        // }, 500);
+    
 
 
+    for (i = 0; i < document.getElementsByClassName('video__clip').length; i++) {
+        var video = document.getElementsByClassName('video__clip')[i];
+        console.log(video); 
+        var t = setInterval(function () {
+            
+            if (video.readyState > 0) {
+                var duration = video.duration;
+                console.log(duration);
+                var roundDuration = Math.floor(duration);
+                let addCount = '';
+                if (roundDuration % 60 > 10) {
+                    addCount = '0'
+                }
+                else addCount = '0'
+                // console.log(addCount);
+                // console.log(Math.floor(roundDuration / 60) + ':' + addCount + roundDuration % 60);
+                $('#videoDurClip' + i).text(Math.floor(roundDuration / 60) + ':' + addCount + roundDuration % 60);
+                clearInterval(t);
+                console.log('#videoDurClip' + i);
+            }
+        }, 500);
 
+    }
     
 
     // $(document).bind("click keydown", function (event) {

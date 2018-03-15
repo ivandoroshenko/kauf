@@ -131,7 +131,27 @@ input[type=checkbox] + label:after {
             max-width: 220px;
             margin: 0;
             padding: 0 15px 0 15px;
-                    
+            
+            &:before{
+                content: '';
+                position: absolute;
+                top: 38%;
+                left: 53%;
+                background: url('../img/play-icon-small.png') center center no-repeat;
+                transform: translate(-50%, -50%);
+                width: 40px;
+                height: 40px;
+                border: 2px solid #fff;
+                border-radius: 50%;
+                z-index: 3;
+                pointer-events: none;
+                
+                               
+            }
+
+            
+            
+        
             
             &:first-child {
                 // margin-left: 28px;
@@ -148,11 +168,40 @@ input[type=checkbox] + label:after {
 
                      
         }
+
+        .video-duration {
+            position: absolute;
+            min-width: 40px;
+            text-align: center;
+            top: 8px;
+            right: 0px;
+            border-radius: 3px;
+            background-color: rgba(34, 34, 37, 0.5);
+            z-index: 2;
+            margin: 0;
+            padding: 5px 6px;
+
+            color: #fff;
+            font-family: $base-font;
+            font-size: 0.625rem;
+            font-weight: 700;
+        }
+
+       
+
+
+       
         .video__clip {
             margin-bottom: 7px;
             border-radius: 6px;
             box-sizing: border-box;
+            position: relative;
+            cursor: pointer;
+
+            
         }
+
+      
 
         .video__slide-title {
             margin: 0 0 5px 0;
