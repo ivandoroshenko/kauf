@@ -41,6 +41,16 @@ $(function() {
         fade: false,
         cssEase: 'ease-out',
         adaptiveHeight: false,
+        responsive: [
+            {
+              breakpoint: 769,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2
+
+              }
+            }
+        ],
         prevArrow: $('.storage-prev'),
         nextArrow: $('.storage-next')
     });
@@ -63,7 +73,7 @@ $(function() {
             {
               breakpoint: 1025,
               settings: {
-                slidesToShow: 3.5,
+                slidesToShow: 4,
                 slidesToScroll: 2
 
               }

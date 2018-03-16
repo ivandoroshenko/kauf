@@ -18,10 +18,20 @@
     padding: 17px 33px;
     transition: color, background-color, box-shadow 0.7s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 
+    @media screen and (max-width: 768px) {
+        font-size: 0.8rem;
+        padding: 14px 29px;
+        bottom: 66px;
+    }
+    
     &:hover {
         background-color: #fff;
         color: #7b91af;
         box-shadow: 0 5px 20px rgba(168, 173, 187, 0.8);
     }
+
+    
+
+ 
   
 }
