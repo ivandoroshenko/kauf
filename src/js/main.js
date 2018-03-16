@@ -139,13 +139,14 @@ $(function() {
 
         
     for (i = 0; i < document.getElementsByClassName('video__clip').length; i++) {
-        var video = document.getElementsByClassName('video__clip')[i];
-        console.log(video); 
+        var video = document.getElementsByClassName('video__clip');
+        
         var t = setInterval(function () {
             
             if (video.readyState > 0) {
-                var duration = video.duration;
-                console.log(duration);
+                console.log($(video)[i]); 
+                // var duration = $(video)[i].duration;
+                // console.log(duration);
                 var roundDuration = Math.floor(duration);
                 let addCount = '';
                 if (roundDuration % 60 > 10) {
@@ -156,8 +157,9 @@ $(function() {
                 // console.log(Math.floor(roundDuration / 60) + ':' + addCount + roundDuration % 60);
                 $('#videoDurClip' + i).text(Math.floor(roundDuration / 60) + ':' + addCount + roundDuration % 60);
                 clearInterval(t);
-                console.log('#videoDurClip' + i);
+                // console.log('#videoDurClip' + i);
             }
+            
         }, 500);
 
     }
