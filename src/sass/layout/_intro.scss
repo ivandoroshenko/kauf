@@ -14,3 +14,13 @@
 .intro__title {
     display: none;
 }
+
+.top__video {
+    width: 630px;
+    height: 399px;
+
+    @media screen and (max-width: 768px) {
+        width: 400px;
+        height: 400px * 0.633;
+    }
+}
