@@ -46,7 +46,7 @@ $(function() {
               breakpoint: 769,
               settings: {
                 slidesToShow: 2,
-                slidesToScroll: 2
+                slidesToScroll: 1
 
               }
             }
@@ -77,6 +77,14 @@ $(function() {
                 slidesToScroll: 2
 
               }
+            },
+            {
+                breakpoint: 769,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 2
+
+                }
             }
         ],
         prevArrow: $('.video-prev'),

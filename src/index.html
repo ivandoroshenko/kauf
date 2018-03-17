@@ -129,7 +129,7 @@
                             <div class="storage__item">
                                 <img src="img/rel-item1__bag.jpg" alt="item" class="storage__item-picture">
                                 <div class="storage__item--descr">
-                                    <a href="#" class="storage__item-status" id='new'>New</a>
+                                    <a href="#" class="storage__item-status storage__item-status--new">New</a>
                                     <h4 class="storage__item-category">Bags</h4>
                                     <h3 class="storage__item-name">Marschall Pack</h3>
                                     <button class="btn buy--btn">$ 359.00</button>
@@ -141,7 +141,7 @@
                             <div class="storage__item">
                                 <img src="img/rel-item2__keys.jpg" alt="item" class="storage__item-picture">
                                 <div class="storage__item--descr">
-                                    <a href="#" class="storage__item-status" id='best'>Best Buy</a>
+                                    <a href="#" class="storage__item-status storage__item-status--best">Best Buy</a>
                                     <h4 class="storage__item-category">Accessories</h4>
                                     <h3 class="storage__item-name">EDC Kit 2</h3>
                                     <button class="btn buy--btn">$ 229.00</button>
@@ -153,7 +153,7 @@
                             <div class="storage__item">
                                 <img src="img/rel-item3__pack.jpg" alt="item" class="storage__item-picture">
                                 <div class="storage__item--descr">
-                                    <a href="#" class="storage__item-status" id='bio'>Bio</a>
+                                    <a href="#" class="storage__item-status storage__item-status--bio">Bio</a>
                                     <h4 class="storage__item-category">Garden</h4>
                                     <h3 class="storage__item-name">All Natural Soil</h3>
                                     <button class="btn buy--btn">$ 16.00</button>
@@ -168,7 +168,7 @@
                             <div class="storage__item">
                                 <img src="img/rel-item1__bag.jpg" alt="item" class="storage__item-picture">
                                 <div class="storage__item--descr">
-                                    <a href="#" class="storage__item-status" id='new1'>New</a>
+                                    <a href="#" class="storage__item-status storage__item-status--new">New</a>
                                     <h4 class="storage__item-category">Bags</h4>
                                     <h3 class="storage__item-name">Marschall Pack</h3>
                                     <button class="btn buy--btn">$ 359.00</button>
@@ -180,7 +180,7 @@
                             <div class="storage__item">
                                 <img src="img/rel-item2__keys.jpg" alt="item" class="storage__item-picture">
                                 <div class="storage__item--descr ">
-                                    <a href="# " class="storage__item-status " id='best1'>Best Buy</a>
+                                    <a href="# " class="storage__item-status storage__item-status--best">Best Buy</a>
                                     <h4 class="storage__item-category ">Accessories</h4>
                                     <h3 class="storage__item-name ">EDC Kit 2</h3>
                                     <button class="btn buy--btn ">$ 229.00</button>
@@ -192,7 +192,7 @@
                             <div class="storage__item ">
                                 <img src="img/rel-item3__pack.jpg " alt="item " class="storage__item-picture ">
                                 <div class="storage__item--descr ">
-                                    <a href="# " class="storage__item-status " id='bio1'>Bio</a>
+                                    <a href="# " class="storage__item-status storage__item-status--bio">Bio</a>
                                     <h4 class="storage__item-category ">Garden</h4>
                                     <h3 class="storage__item-name ">All Natural Soil</h3>
                                     <button class="btn buy--btn ">$ 16.00</button>
@@ -249,9 +249,10 @@
             <section class="news">
                 <h2 class="news__title">News</h2>
 
+                <div class="news__column-left">
                 <!-- CARS -->
                 <div class="news__card news__card--cars news-col-4">
-                    <div class="news__image-wrapper cars-wrapper">
+                    <div class="news__image-wrapper news__image-wrapper--cars">
                         <img src="img/news1__car.jpg" alt="car" class="news__image">
                         <a href="#" class="news__card-category news__card-category--cars"><span></span>cars</a>
                     </div>   
@@ -273,21 +274,24 @@
                 
                 <!-- OUTDOOR -->
                 <div class="news__card news__card--outdoors news-col-4">
-                    <img src="img/news2__house.jpg" alt="house" class="news__image">
                     <div class="news__card-descr news__card-descr--outdoors">
                         <div class="news__card-subtitle-wrapper">
                             <img src="img/outdoors-title-img.jpg" alt="circle">
                             <h4 class="news__card-subtitle">Ultralinx</h4>
                             <span class="time">Jan. 14, 2016</span>
                         </div>
+                        <div class="news__image-wrapper news__image-wrapper--outdoor">
+                            <img src="img/news2__house.jpg" alt="house" class="news__image news__image--outdoors">
+                        </div>
                         <h3 class="news__card-title">Finding Home in the Wild</h3>
                         <a href="#" class="news__card-category news__card-category--outdoor"><span></span>OUTDOOR</a>
                     </div>
                 </div> <!-- /OUTDOOR -->
+                </div> <!-- /column-left -->
                 
                 <!-- art&design -->
                 <div class="news__card news__card--art">
-                    <div class="news__image-wrapper">
+                    <div class="news__image-wrapper news__image-wrapper--art">
                         <img src="img/news3__table.jpg" alt="car" class="news__image">
                     </div>
 

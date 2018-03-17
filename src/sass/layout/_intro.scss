@@ -23,4 +23,9 @@
         width: 400px;
         height: 400px * 0.633;
     }
+
+    @media screen and (max-width: 375px) {
+        width: 400px;
+        height: 400px * 0.633;
+    }
 }
