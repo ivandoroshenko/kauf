@@ -2,7 +2,7 @@
     display: flex;
     flex-flow: row nowrap;
     align-items: flex-start;
-    justify-content: center;
+    justify-content: space-between;
     width: 100%;    
     margin: 0 0 27px 0;
 
@@ -10,7 +10,7 @@
         margin-bottom: 20px;
     }
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 965px) {
     flex-wrap: wrap;    
     }
 }
@@ -22,12 +22,21 @@
 
 .news__column-left {
     display: flex;
-    width: 50%;
+    width: 51%;
+    flex-flow: row nowrap;
     align-items: stretch;
+    height: 100%;
 
-    @media screen and (max-width: 768px) {
+
+    
+
+    @media screen and (max-width: 965px) {
         width: 100%;
         margin-bottom: 20px;
+    }
+
+    @media screen and (max-width: 768px) {
+        min-height: 450px;
     }
 }
 .news-col-4 {
@@ -37,9 +46,18 @@
    @media screen and (max-width: 1024px) {
     width: 270px / 1170px * 100%;
     min-width: 235px;
+    
 }
 
- @media screen and (max-width: 768px) {
+@media screen and (max-width: 986px) {
+        min-width: 230px;
+    }
+
+ @media screen and (max-width: 965px) {
+    width: 45%;
+}
+
+ @media screen and (max-width: 965px) {
     width: 45%;
 }
 
@@ -77,12 +95,20 @@
   
 }
 
-// CARS
+//CARS
 
 .news__card--cars {
+    height: 100%;
+    @media screen and (max-width: 1000px) {
+        margin-right: 15px;
+    }
 
+   @media screen and (max-width: 965px) {
+        width: 50%;
+    }
     @media screen and (max-width: 768px) {
         width: 50%;
+        height: 100%;
         margin: 0;
         border-radius: 6px 0 0 6px;
     }
@@ -93,11 +119,11 @@
         max-height: 229px;
 
         @media screen and (max-width: 1024px) {
-            max-height: 173px;
+            max-height: 192px;
             width: 80%; 
         }
-        @media screen and (max-width: 768px) {
-            max-height: 240px;
+        @media screen and (max-width: 965px) {
+            max-height: 300px;
             width: 100%;
             
         }
@@ -114,6 +140,7 @@
         padding: 0;
         margin: 0 0 5px;
         border-radius: 6px;
+
     }
 
     .news__card-subtitle {
@@ -122,26 +149,28 @@
         font-size: 1rem;
         font-weight: 400;
         letter-spacing: 0.006rem;
-        padding: 0;
+        padding: 0 0 174px;
         margin: 0 0 20px;
 
-         @media screen and (max-width: 768px) {
-               margin-bottom: 126px;
-            
-        }
+
+
     }
 }
 
 
-// OUTDOORS
+//OUTDOORS
 .news__card--outdoors {
     position: relative;
-    padding-top: 216px;
     height: 100%;
     
+    
 
-    @media screen and (max-width: 1024px) {
-         padding-top: 166px;
+   
+
+         @media screen and (max-width: 965px) {
+         padding-top: 400px;
+         width: 50%;
+         margin-right: 0;
         }
     
      @media screen and (max-width: 768px) {
@@ -151,6 +180,15 @@
             margin: 0;
             border-radius: 0 6px 6px 0;
         }
+
+    @media screen and (max-width: 768px) {
+            width: 50%;    
+            padding: 300px 0 0;
+            height: 100%;
+            margin: 0;
+            border-radius: 0 6px 6px 0;
+        }
+        
     
     
     .news__card-subtitle-wrapper {
@@ -217,17 +255,25 @@
     }
     
     &--cars {
+        min-width: 270px;
         border-radius: 0 0 6px 6px;
-
-         @media screen and (max-width: 768px) {
-            width: 100%;
-            border-radius: 0;
+    
+        @media screen and (max-width: 965px) {
+        width: 100%;
+            
     }
+         @media screen and (max-width: 768px) {
+            border-radius: 0;
+    }   
+
+     @media screen and (max-width: 700px) {
+        min-height: 50%;
+    }        
     
     }
 
     &--outdoors {
-        padding: 0 30px 38px;
+        padding: 116px 30px 38px;
         margin-top: auto;
         
         left: 0;
@@ -236,10 +282,12 @@
 
         @media screen and (max-width: 1024px) {
              height: 100%;
+             padding-top: 167px;
         }
 
         @media screen and (max-width: 1024px) {
             border-radius: 0;
+            padding-top: 128px;
         }
         
     
@@ -249,7 +297,7 @@
         width: 270px / 1170px * 100%;
         border-radius: 6px 0 0 6px;
 
-        @media screen and (max-width: 768px) {
+        @media screen and (max-width: 965px) {
             width: 50%;
             
         }
@@ -265,16 +313,19 @@
     
 
     &--cars {
-        @media screen and (max-width: 768px) {
+        @media screen and (max-width: 965px) {
             width: 100%;
         }
     }
 
     &--art {
+        @media screen and (max-width: 1170px) {
+            width: 270px;
+        }
         @media screen and (max-width: 1024px) {
             width: 247px;
         }
-        @media screen and (max-width: 768px) {
+        @media screen and (max-width: 965px) {
             width: 50%;
         }
     }
@@ -357,13 +408,13 @@
         
     }
 }
-// ART
+//ART
 .news__card--art {
     display: flex;
     flex-flow: row-reverse nowrap;
-    flex-grow: 1;
+    margin-right: 0;
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 965px) {
         width: 100%;
         margin: 0 auto;
         justify-content: center;
@@ -395,6 +446,11 @@
             font-size: 1.25rem;
         }
 
+        @media screen and (max-width: 965px) {
+            max-width: 100%;
+            
+        }
+
          @media screen and (max-width: 768px) {
            max-width: 100%;
            font-size: 1.375rem;
@@ -420,9 +476,16 @@
             margin-bottom: 12px;
         }
 
+        @media screen and (max-width: 965px) {
+            max-width: 100%;
+            
+        }
+
         @media screen and (max-width: 768px) {
-           max-width: 100%;
-           font-size: 1.125rem;
+            max-width: 100%;
+            font-size: 1.125rem;
+            padding-bottom: \183px; 
+
         }
    
     }
