@@ -104,6 +104,14 @@ $(function() {
                     slidesToScroll: 2
 
                 }
+            },
+            {
+                breakpoint: 677,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2
+
+                }
             }
         ],
         prevArrow: $('.video-prev'),
