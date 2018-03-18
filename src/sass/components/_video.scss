@@ -6,7 +6,21 @@
         z-index: 3;
         cursor: pointer;
         width: 630px;
+
+        @media screen and (max-width: 768px) {
+            top: 72px;
+            transform: translate(-50%, 0);
+         }
+
+         @media screen and (max-width: 672px) {
+            width: 100%;
+            height: auto;
+         }
         
+        @media screen and (max-width: 484px) {
+            top: 42px;
+         }
+
         
     }
     

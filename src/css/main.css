@@ -80,11 +80,19 @@ body {
   -o-transition: color, background-color, box-shadow 0.7s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   transition: color, background-color, box-shadow 0.7s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   transition: color, background-color, box-shadow 0.7s cubic-bezier(0.175, 0.885, 0.32, 1.275), -webkit-box-shadow 0.7s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1024px) {
+    .btn--video {
+      bottom: 66px; } }
+  @media screen and (max-width: 958px) {
     .btn--video {
       font-size: 0.8rem;
       padding: 14px 29px;
-      bottom: 66px; } }
+      bottom: 60px; } }
+  @media screen and (max-width: 768px) {
+    .btn--video {
+      bottom: 50px;
+      font-size: 0.6rem;
+      padding: 9px 20px; } }
   .btn--video:hover {
     background-color: #fff;
     color: #7b91af;
@@ -94,8 +102,6 @@ body {
 .intro__slider {
   position: relative;
   text-align: center;
-  max-width: 100%;
-  height: auto;
   padding: 0;
   margin: 0; }
 
@@ -146,18 +152,34 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.35);
   -webkit-border-radius: 50%;
           border-radius: 50%; }
+  @media screen and (max-width: 768px) {
+    .prev,
+    .next {
+      display: none; } }
 
 .slick-disabled {
   color: rgba(255, 255, 255, 0.35); }
 
 .prev {
   left: 70px; }
+  @media screen and (max-width: 682px) {
+    .prev {
+      left: 40px; } }
 
 .next {
   right: 70px; }
+  @media screen and (max-width: 682px) {
+    .next {
+      right: 40px; } }
 
 .slick-dots {
   bottom: 30px; }
+  @media screen and (max-width: 768px) {
+    .slick-dots {
+      bottom: 20px; } }
+  @media screen and (max-width: 612px) {
+    .slick-dots {
+      bottom: 10px; } }
   .slick-dots li {
     width: 9px;
     height: 9px;
@@ -183,6 +205,19 @@ body {
   z-index: 3;
   cursor: pointer;
   width: 630px; }
+  @media screen and (max-width: 768px) {
+    .video__wrapper {
+      top: 72px;
+      -webkit-transform: translate(-50%, 0);
+          -ms-transform: translate(-50%, 0);
+              transform: translate(-50%, 0); } }
+  @media screen and (max-width: 672px) {
+    .video__wrapper {
+      width: 100%;
+      height: auto; } }
+  @media screen and (max-width: 484px) {
+    .video__wrapper {
+      top: 42px; } }
 
 .play {
   position: absolute;
@@ -247,11 +282,19 @@ body {
   -o-transition: color, background-color, box-shadow 0.7s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   transition: color, background-color, box-shadow 0.7s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   transition: color, background-color, box-shadow 0.7s cubic-bezier(0.175, 0.885, 0.32, 1.275), -webkit-box-shadow 0.7s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1024px) {
+    .btn--video {
+      bottom: 66px; } }
+  @media screen and (max-width: 958px) {
     .btn--video {
       font-size: 0.8rem;
       padding: 14px 29px;
-      bottom: 66px; } }
+      bottom: 60px; } }
+  @media screen and (max-width: 768px) {
+    .btn--video {
+      bottom: 50px;
+      font-size: 0.6rem;
+      padding: 9px 20px; } }
   .btn--video:hover {
     background-color: #fff;
     color: #7b91af;
@@ -283,6 +326,13 @@ body {
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between; }
+  @media screen and (max-width: 768px) {
+    .header {
+      padding: 25px 40px 0; } }
+
+@media screen and (max-width: 484px) {
+  .logo {
+    width: 30px; } }
 
 .header__title {
   display: none; }
@@ -312,6 +362,9 @@ body {
     list-style-type: none;
     padding: 0;
     margin: 0 33px 0; }
+    @media screen and (max-width: 768px) {
+      .nav__list {
+        margin: 0 15px 0; } }
   .nav__item {
     margin-left: 17px;
     white-space: nowrap;
@@ -363,14 +416,28 @@ body {
 .top__video {
   width: 630px;
   height: 399px; }
+  @media screen and (max-width: 910px) {
+    .top__video {
+      width: 500px;
+      height: 316.5px; } }
+  @media screen and (max-width: 790px) {
+    .top__video {
+      width: 450px;
+      height: 284.85px; } }
   @media screen and (max-width: 768px) {
     .top__video {
-      width: 400px;
-      height: 253.2px; } }
-  @media screen and (max-width: 375px) {
+      width: 90%;
+      height: auto;
+      min-height: 100%; } }
+  @media screen and (max-width: 484px) {
     .top__video {
-      width: 400px;
-      height: 253.2px; } }
+      width: 100%;
+      height: auto;
+      min-height: 100%; } }
+  @media screen and (max-width: 395px) {
+    .top__video {
+      width: 100%;
+      height: 100%; } }
 
 .storage {
   -webkit-border-radius: 5px;

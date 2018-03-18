@@ -23,6 +23,15 @@ $(function() {
         fade: false,
         cssEase: 'ease-in-out',
         adaptiveHeight: false,
+        responsive: [
+            {
+                breakpoint: 766,
+                settings: {
+                    arrows: false
+
+                }
+            }
+        ],
         prevArrow: $('.prev'),
         nextArrow: $('.next')
     });
