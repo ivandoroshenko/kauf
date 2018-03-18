@@ -58,7 +58,17 @@ $(function() {
                 slidesToScroll: 1
 
               }
+            },
+
+            {
+                breakpoint: 529,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+
+                }
             }
+
         ],
         prevArrow: $('.storage-prev'),
         nextArrow: $('.storage-next')
