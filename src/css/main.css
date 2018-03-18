@@ -763,6 +763,14 @@ select {
   @media screen and (max-width: 768px) {
     .news__column-left {
       min-height: 450px; } }
+  @media screen and (max-width: 554px) {
+    .news__column-left {
+      width: 100%;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column; } }
 
 .news-col-4 {
   width: 23.07692%;
@@ -780,6 +788,9 @@ select {
   @media screen and (max-width: 965px) {
     .news-col-4 {
       width: 45%; } }
+  @media screen and (max-width: 554px) {
+    .news-col-4 {
+      width: 100%; } }
 
 .news__card {
   -webkit-border-radius: 6px;
@@ -791,6 +802,14 @@ select {
   @media screen and (max-width: 768px) {
     .news__card {
       margin: 0 0 20px 0; } }
+  @media screen and (max-width: 554px) {
+    .news__card {
+      width: 100%;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column; } }
   .news__card--art {
     margin: 0; }
   .news__card img {
@@ -818,19 +837,33 @@ select {
       margin: 0;
       -webkit-border-radius: 6px 0 0 6px;
               border-radius: 6px 0 0 6px; } }
+  @media screen and (max-width: 554px) {
+    .news__card--cars {
+      width: 100%;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      margin-bottom: 15px;
+      -webkit-border-radius: 6px;
+              border-radius: 6px; } }
   .news__card--cars img {
     display: block;
     -webkit-border-radius: 6px 6px 0 0;
             border-radius: 6px 6px 0 0;
-    max-height: 229px; }
+    height: 229px; }
     @media screen and (max-width: 1024px) {
       .news__card--cars img {
-        max-height: 192px;
+        height: 192px;
         width: 80%; } }
     @media screen and (max-width: 965px) {
       .news__card--cars img {
-        max-height: 300px;
+        height: 300px;
         width: 100%; } }
+    @media screen and (max-width: 554px) {
+      .news__card--cars img {
+        height: auto; } }
   .news__card--cars .news__card-title {
     color: #454553;
     font-family: "Lato", sans-serif;
@@ -846,33 +879,47 @@ select {
     font-size: 1rem;
     font-weight: 400;
     letter-spacing: 0.006rem;
-    padding: 0 0 174px;
+    padding: 0;
     margin: 0 0 20px; }
+    @media screen and (max-width: 965px) {
+      .news__card--cars .news__card-subtitle {
+        width: 100%;
+        margin-right: 0;
+        padding-bottom: 165px; } }
+    @media screen and (max-width: 880px) {
+      .news__card--cars .news__card-subtitle {
+        padding-bottom: 146px; } }
+    @media screen and (max-width: 768px) {
+      .news__card--cars .news__card-subtitle {
+        padding-bottom: 40px;
+        margin-bottom: 0; } }
+    @media screen and (max-width: 720px) {
+      .news__card--cars .news__card-subtitle {
+        padding-bottom: 20px; } }
 
 .news__card--outdoors {
   position: relative;
   height: 100%; }
   @media screen and (max-width: 965px) {
     .news__card--outdoors {
-      padding-top: 400px;
       width: 50%;
       margin-right: 0; } }
   @media screen and (max-width: 768px) {
     .news__card--outdoors {
       width: 50%;
-      padding: 300px 0 0;
+      padding: 0;
       height: 100%;
       margin: 0;
       -webkit-border-radius: 0 6px 6px 0;
               border-radius: 0 6px 6px 0; } }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 554px) {
     .news__card--outdoors {
-      width: 50%;
-      padding: 300px 0 0;
-      height: 100%;
-      margin: 0;
-      -webkit-border-radius: 0 6px 6px 0;
-              border-radius: 0 6px 6px 0; } }
+      width: 100%;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column; } }
   .news__card--outdoors .news__card-subtitle-wrapper {
     display: -webkit-box;
     display: -webkit-flex;
@@ -900,6 +947,14 @@ select {
       -webkit-border-radius: 50%;
               border-radius: 50%;
       margin-right: 4px; }
+  .news__card--outdoors .news__card-title {
+    color: #fff;
+    font-family: "Lato", sans-serif;
+    font-size: 1.625rem;
+    font-weight: 400;
+    margin: 0 0 20px;
+    padding: 0;
+    max-width: 185px; }
   .news__card--outdoors .news__card-subtitle {
     padding: 0;
     color: #fff;
@@ -914,14 +969,6 @@ select {
     font-size: 0.75rem;
     font-weight: 400;
     margin-right: 6px; }
-  .news__card--outdoors .news__card-title {
-    color: #fff;
-    font-family: "Lato", sans-serif;
-    font-size: 1.625rem;
-    font-weight: 400;
-    margin: 0 0 20px;
-    padding: 0;
-    max-width: 185px; }
 
 .news__card-descr {
   background-color: #f7f7f9;
@@ -953,24 +1000,31 @@ select {
       .news__card-descr--cars {
         -webkit-border-radius: 0;
                 border-radius: 0; } }
-    @media screen and (max-width: 700px) {
-      .news__card-descr--cars {
-        min-height: 50%; } }
   .news__card-descr--outdoors {
-    padding: 116px 30px 38px;
-    margin-top: auto;
+    padding: 216px 30px 38px;
     left: 0;
     bottom: 0;
-    background: transparent; }
+    background: transparent;
+    position: relative;
+    overflow: hidden; }
     @media screen and (max-width: 1024px) {
       .news__card-descr--outdoors {
         height: 100%;
         padding-top: 167px; } }
-    @media screen and (max-width: 1024px) {
+    @media screen and (max-width: 965px) {
+      .news__card-descr--outdoors {
+        padding-top: 400px; } }
+    @media screen and (max-width: 768px) {
       .news__card-descr--outdoors {
         -webkit-border-radius: 0;
                 border-radius: 0;
-        padding-top: 128px; } }
+        padding-top: 275px; } }
+    @media screen and (max-width: 554px) {
+      .news__card-descr--outdoors {
+        padding-top: 400px; } }
+    @media screen and (max-width: 400px) {
+      .news__card-descr--outdoors {
+        padding-top: 300px; } }
   .news__card-descr--art {
     width: 23.07692%;
     -webkit-border-radius: 6px 0 0 6px;
@@ -978,6 +1032,9 @@ select {
     @media screen and (max-width: 965px) {
       .news__card-descr--art {
         width: 50%; } }
+    @media screen and (max-width: 554px) {
+      .news__card-descr--art {
+        width: 100%; } }
 
 .news__image-wrapper {
   position: relative;
@@ -987,15 +1044,6 @@ select {
   @media screen and (max-width: 965px) {
     .news__image-wrapper--cars {
       width: 100%; } }
-  @media screen and (max-width: 1170px) {
-    .news__image-wrapper--art {
-      width: 270px; } }
-  @media screen and (max-width: 1024px) {
-    .news__image-wrapper--art {
-      width: 247px; } }
-  @media screen and (max-width: 965px) {
-    .news__image-wrapper--art {
-      width: 50%; } }
   .news__image-wrapper--outdoor {
     width: 100%;
     height: 100%;
@@ -1012,6 +1060,18 @@ select {
             transform: translate(-50%, -50%);
     -webkit-border-radius: 0 6px 6px 0;
             border-radius: 0 6px 6px 0; }
+  @media screen and (max-width: 1170px) {
+    .news__image-wrapper--art {
+      width: 270px; } }
+  @media screen and (max-width: 1024px) {
+    .news__image-wrapper--art {
+      width: 247px; } }
+  @media screen and (max-width: 965px) {
+    .news__image-wrapper--art {
+      width: 50%; } }
+  @media screen and (max-width: 554px) {
+    .news__image-wrapper--art {
+      width: 100%; } }
 
 .news__image--outdoors {
   display: block;
@@ -1089,6 +1149,25 @@ select {
       -webkit-border-radius: 6px;
               border-radius: 6px;
       padding: 0; } }
+  @media screen and (max-width: 965px) {
+    .news__card--art {
+      width: 100%;
+      margin: 0 auto;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-border-radius: 6px;
+              border-radius: 6px;
+      padding: 0; } }
+  @media screen and (max-width: 554px) {
+    .news__card--art {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: reverse;
+      -webkit-flex-direction: column-reverse;
+          -ms-flex-direction: column-reverse;
+              flex-direction: column-reverse;
+      width: 100%; } }
   .news__card--art img {
     height: 100%;
     width: 300px;
