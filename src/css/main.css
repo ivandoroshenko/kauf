@@ -560,7 +560,9 @@ body {
       -webkit-box-pack: center;
       -webkit-justify-content: center;
           -ms-flex-pack: center;
-              justify-content: center; } }
+              justify-content: center;
+      margin-right: 0;
+      margin-left: 10px; } }
 
 .storage__item--descr {
   margin-top: 14px;
