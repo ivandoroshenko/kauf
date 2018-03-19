@@ -1520,10 +1520,12 @@ select {
   @media screen and (max-width: 1024px) {
     .video__slider {
       margin: 0;
-      padding: 50px; } }
-  @media screen and (max-width: 1024px) {
+      padding: 10px 20px 0 20px; } }
+  @media screen and (max-width: 676px) {
     .video__slider {
-      margin: 0;
+      padding: 10px 20px 0 30px; } }
+  @media screen and (max-width: 460px) {
+    .video__slider {
       padding: 10px 20px 0 20px; } }
 
 .video__slide {
