@@ -665,9 +665,16 @@ body {
   @media screen and (max-width: 1024px) {
     .select {
       margin-bottom: 20px; } }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 800px) {
     .select {
       padding: 15px; } }
+  @media screen and (max-width: 596px) {
+    .select {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column; } }
 
 .select__title {
   padding: 0;
@@ -710,6 +717,10 @@ body {
   @media screen and (max-width: 768px) {
     .select__wrapper {
       padding: 10px 15px 10px 0; } }
+  @media screen and (max-width: 586px) {
+    .select__wrapper {
+      border-right: none;
+      padding-bottom: 10px; } }
 
 select {
   min-width: 82px;
@@ -746,13 +757,13 @@ select {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -webkit-flex-flow: row nowrap;
-      -ms-flex-flow: row nowrap;
-          flex-flow: row nowrap;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-flex-flow: row wrap;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   width: 70%;
   -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
@@ -765,10 +776,25 @@ select {
           justify-content: space-between; }
   @media screen and (max-width: 1024px) {
     .sort__list {
-      padding: 0 15px; } }
-  @media screen and (max-width: 1024px) {
+      padding: 0 0 0 15px; } }
+  @media screen and (max-width: 768px) {
     .sort__list {
-      padding-right: 0; } }
+      -webkit-box-align: space-between;
+      -webkit-align-items: space-between;
+          -ms-flex-align: space-between;
+              align-items: space-between; } }
+  @media screen and (max-width: 596px) {
+    .sort__list {
+      width: 100%;
+      padding: 0; } }
+
+.sort__item {
+  display: block;
+  min-width: 20px; }
+  @media screen and (max-width: 768px) {
+    .sort__item {
+      min-width: 40px;
+      margin-bottom: 15px; } }
 
 .sort__link {
   text-decoration: none;
@@ -794,6 +820,9 @@ select {
   -webkit-transition: color .3s ease-out;
   -o-transition: color .3s ease-out;
   transition: color .3s ease-out; }
+  @media screen and (max-width: 768px) {
+    .sort__link {
+      width: 20px; } }
   .sort__link:hover {
     -webkit-border-radius: 50%;
             border-radius: 50%;
