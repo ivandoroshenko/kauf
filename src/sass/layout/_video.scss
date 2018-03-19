@@ -7,12 +7,22 @@
     @media screen and (max-width: 1024px) {
         margin-bottom: 20px;
     }
+
+     @media screen and (max-width: 460px) {
+        padding-bottom: 16px;
+                
+    }
 }
 
 // wrapper for correct positioning slider and border of the heading 
 .video__heading-wrap {
     margin: 0 51px 31px 51px;
     position: relative;
+
+    @media screen and (max-width: 460px) {
+        padding-bottom: 5px;
+        margin-bottom: 0;        
+    }
 }
 .video__heading {
     width: 100%;
@@ -23,7 +33,14 @@
     align-items: center;
     justify-content: flex-end;
     position: relative;
+
+    @media screen and (max-width: 582px) {
+            padding-bottom: 30px;
+        }
+
 }
+
+// HEADING TITLE
 .video__title-wrap {
     display: flex;
     flex-flow: row nowrap;
@@ -31,6 +48,8 @@
     top: 0;
     left: 50%;
     transform: translateX(-50%);
+    white-space: nowrap;
+
 }
 .video__title {
     color: #454553;
@@ -57,10 +76,7 @@
         cursor: pointer;
 
         @media screen and (max-width: 582px) {
-            position: absolute;
-            top: 50%;
-            right: 0;
-            transform: translateY(-50%);
+            display: none;
         }
     }
 
@@ -155,13 +171,10 @@ input[type=checkbox] + label:after {
                 margin: 0;
                 
             }
-            &:first-child {
-                // margin-left: 28px;
-
-                @media screen and (max-width: 1024px) {
-                    // margin-left: 30px;
-                }
-
+            
+            @media screen and (max-width: 460px) {
+                padding-top: 0;
+                
             }
 
             &:last-child {
@@ -223,7 +236,7 @@ input[type=checkbox] + label:after {
             font-weight: 700;
 
             @media screen and (max-width: 460px) {
-                right: 46px;
+                right: 56px;
                 
             }
 
