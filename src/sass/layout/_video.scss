@@ -19,8 +19,8 @@
     margin: 0 51px 31px 51px;
     position: relative;
 
-    @media screen and (max-width: 460px) {
-        padding-bottom: 5px;
+    @media screen and (max-width: 662px) {
+        padding-bottom: 15px;
         margin-bottom: 0;        
     }
 }
@@ -173,6 +173,7 @@ input[type=checkbox] + label:after {
             margin: 0;
             padding: 0 15px 0 15px;
             position: relative;
+            outline: none;
 
             @media screen and (max-width: 1024px) {
                 padding: 0 15px 0 15px;

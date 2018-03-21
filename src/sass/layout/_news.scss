@@ -272,6 +272,8 @@
     }
 
     
+
+    
 }
 
 
@@ -325,6 +327,7 @@
 
         @media screen and (max-width: 554px) {
             padding-top: 400px;
+            border-radius: 6px;
         }
         
         @media screen and (max-width: 400px) {
@@ -344,7 +347,9 @@
 
         @media screen and (max-width: 554px) {
             width: 100%;
+            border-radius: 6px 0 0 0;
         }
+
     }
 
 
@@ -389,6 +394,7 @@
 
         @media screen and (max-width: 554px) {
             width: 100%;
+            border-radius: 0;
         }
     }
 
@@ -400,6 +406,14 @@
     border-radius: 0;
     
 }
+
+.news__image--art {
+    display: block;
+    border-radius: 0;
+    
+}
+
+
 .news__card-category {
     
     display: flex;
