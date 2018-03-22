@@ -26,8 +26,6 @@ gulp.task('sass', function(){
 gulp.task('scripts', function(){
     return gulp.src([
         'src/libs/jquery/dist/jquery.min.js',
-        'src/libs/parallax.js-1.5.0/parallax.min.js',
-        'src/libs/countUp.js-master/countUp.js-master/countUp.js',
         'src/libs/magnific-popup/dist/jquery.magnific-popup.min.js',
         'src/libs/slick-carousel/slick/slick.min.js'
     ])
