@@ -152,25 +152,23 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.35);
   -webkit-border-radius: 50%;
           border-radius: 50%; }
-  @media screen and (max-width: 768px) {
-    .prev,
-    .next {
-      display: none; } }
 
 .slick-disabled {
   color: rgba(255, 255, 255, 0.35); }
 
 .prev {
   left: 70px; }
-  @media screen and (max-width: 682px) {
+  @media screen and (max-width: 768px) {
     .prev {
-      left: 40px; } }
+      display: none;
+      visibility: hidden; } }
 
 .next {
   right: 70px; }
-  @media screen and (max-width: 682px) {
+  @media screen and (max-width: 768px) {
     .next {
-      right: 40px; } }
+      display: none;
+      visibility: hidden; } }
 
 .slick-dots {
   bottom: 30px; }

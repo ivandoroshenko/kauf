@@ -23,17 +23,18 @@ $(function() {
         fade: false,
         cssEase: 'ease-in-out',
         adaptiveHeight: false,
+        
+        prevArrow: $('.prev'),
+        nextArrow: $('.next'),
         responsive: [
             {
-                breakpoint: 766,
+                breakpoint: 769,
                 settings: {
                     arrows: false
 
                 }
             }
-        ],
-        prevArrow: $('.prev'),
-        nextArrow: $('.next')
+        ]
     });
 
     //MIDDLE SLIDER WITH THE GOODS 

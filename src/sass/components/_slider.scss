@@ -34,7 +34,6 @@
     filter: blur(4px) opacity(50%);
 }
 
-
 .prev, 
 .next {
     z-index: 3;
@@ -51,12 +50,10 @@
     color: #fff;
     border: 1px solid rgba(255, 255, 255, 0.35);
     border-radius: 50%;
-
-    @media screen and (max-width: 768px) {
-        display: none;
-    }
     
-
+    
+    
+    
 }
 
 .slick-disabled {
@@ -66,17 +63,23 @@
 .prev {
     left: 70px;
 
-    @media screen and (max-width: 682px) {
-        left: 40px;
+    @media screen and (max-width: 768px) {
+        display: none;
+        visibility: hidden;
     }
+    
 }
 .next {
     right: 70px;
 
-    @media screen and (max-width: 682px) {
-        right: 40px;
+    @media screen and (max-width: 768px) {
+        display: none;
+        visibility: hidden;
     }
 }
+
+
+
 
 //*********** DOTS
  .slick-dots{
