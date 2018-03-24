@@ -1,5 +1,41 @@
 $(function() {
+    //MIDDLE SLIDER WITH THE GOODS 
+    $('.storage__slider').slick({
 
+        dots: false,
+        arrows: true,
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        infinite: true,
+        autoplay: false,
+        autoplaySpeed: 2000,
+        speed: 600,
+        fade: false,
+        cssEase: 'ease-out',
+        adaptiveHeight: false,
+        responsive: [
+            {
+                breakpoint: 769,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1
+
+                }
+            },
+
+            {
+                breakpoint: 529,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+
+                }
+            }
+
+        ],
+        prevArrow: $('.storage-prev'),
+        nextArrow: $('.storage-next')
+    });
     //navigation click======
     // $('.nav__item a').click(function (e) {
     //     e.preventDefault();
@@ -37,43 +73,7 @@ $(function() {
         ]
     });
 
-    //MIDDLE SLIDER WITH THE GOODS 
-    $('.storage__slider').slick({
-
-        dots: false,
-        arrows: true,
-        slidesToShow: 3,
-        slidesToScroll: 3,
-        infinite: true,
-        autoplay: false,
-        autoplaySpeed: 2000,
-        speed: 600,
-        fade: false,
-        cssEase: 'ease-out',
-        adaptiveHeight: false,
-        responsive: [
-            {
-              breakpoint: 769,
-              settings: {
-                slidesToShow: 2,
-                slidesToScroll: 1
-
-              }
-            },
-
-            {
-                breakpoint: 529,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1
-
-                }
-            }
-
-        ],
-        prevArrow: $('.storage-prev'),
-        nextArrow: $('.storage-next')
-    });
+    
 
     // BOTTOM SLIDER WITH VIDEO
     $('.video__slider').slick({

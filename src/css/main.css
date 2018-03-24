@@ -517,9 +517,6 @@ body {
           flex-flow: row nowrap; }
   .storage__slide:nth-child(3n) .storage__item--descr {
     border: none; }
-  @media screen and (max-width: 768px) {
-    .storage__slide {
-      width: 45%; } }
 
 .storage__item {
   padding: 0;
