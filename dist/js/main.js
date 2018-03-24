@@ -172,48 +172,30 @@ $(function() {
         } 
     });
 
-        // VIDEO DURATION ====
-        // var video = $('#video__clip0')[0];
-        // var t = setInterval(function () {
-        //     if (video.readyState > 0) {
-        //         var duration = video.duration;
-        //         var roundDuration = Math.floor(duration);
-        //         let addCount = '';
-        //         if (roundDuration % 60 > 10) {
-        //             addCount = '0'
-        //         }
-        //         else addCount = '0'
-        //         console.log(Math.floor(roundDuration / 60) + ':' + addCount + roundDuration % 60);
-        //         $('#videoDurClip0').text(Math.floor(roundDuration / 60) + ':' + addCount + roundDuration % 60);
-        //         clearInterval(t);
-        //     }
-        // }, 500);
     
 
         
     for (i = 0; i < document.getElementsByClassName('video__clip').length; i++) {
-        var video = document.getElementsByClassName('video__clip');
-        
+        var video = document.getElementsByClassName('video__clip')[i];
+        console.log(video);
+        var duration = $(video).duration;
+        console.log(duration);
         var t = setInterval(function () {
             
             if (video.readyState > 0) {
-                console.log($(video)[i]); 
-                // var duration = $(video)[i].duration;
-                // console.log(duration);
+                var duration = $(video).duration;
+                console.log(duration);
                 var roundDuration = Math.floor(duration);
                 let addCount = '';
                 if (roundDuration % 60 > 10) {
                     addCount = '0'
                 }
-                else addCount = '0'
-                // console.log(addCount);
-                // console.log(Math.floor(roundDuration / 60) + ':' + addCount + roundDuration % 60);
+                else addCount = ''
                 $('#videoDurClip' + i).text(Math.floor(roundDuration / 60) + ':' + addCount + roundDuration % 60);
                 clearInterval(t);
-                // console.log('#videoDurClip' + i);
             }
             
-        }, 500);
+        }, 200);
 
     }
     

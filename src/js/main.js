@@ -1,15 +1,15 @@
 $(function() {
 
     //navigation click======
-    $('.nav__item a').click(function (e) {
-        e.preventDefault();
-        console.log($(this).attr('href'));
-        var getHref = $(this).attr('href');
-        var jump = $(getHref).offset().top;
-        $('html, body').animate({
-            scrollTop: jump
-        }, 1000);
-    });
+    // $('.nav__item a').click(function (e) {
+    //     e.preventDefault();
+    //     console.log($(this).attr('href'));
+    //     var getHref = $(this).attr('href');
+    //     var jump = $(getHref).offset().top;
+    //     $('html, body').animate({
+    //         scrollTop: jump
+    //     }, 1000);
+    // });
 
     // BIG SLIDER
     $('.intro__slider').slick({

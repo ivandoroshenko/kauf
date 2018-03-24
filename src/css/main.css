@@ -393,7 +393,7 @@ body {
     text-transform: uppercase;
     letter-spacing: 1.2px;
     text-decoration: none; }
-    .nav__link:focus {
+    .nav__link:active, .nav__link:hover {
       color: #fff; }
 
 .intro {
@@ -1759,6 +1759,9 @@ select {
     -webkit-transition: width 0.5s ease-in-out;
     -o-transition: width 0.5s ease-in-out;
     transition: width 0.5s ease-in-out; }
+    @media screen and (max-width: 360px) {
+      .footer__main input[type=email] {
+        width: 180px; } }
   .footer__main #footer__email::-webkit-input-placeholder {
     color: #fff; }
   .footer__main #footer__email::-moz-placeholder {

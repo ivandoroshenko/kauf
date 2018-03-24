@@ -74,7 +74,8 @@
     letter-spacing: 1.2px;
     text-decoration: none;
 
-        &:focus {
+        &:active,
+        &:hover {
             color: #fff;
         }
     }
