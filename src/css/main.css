@@ -1110,7 +1110,7 @@ select {
         -webkit-border-radius: 0;
                 border-radius: 0; } }
   .news__card-descr--outdoors {
-    padding: 203px 30px 38px;
+    padding: 216px 30px 38px;
     left: 0;
     bottom: 0;
     background: transparent;
@@ -1119,15 +1119,15 @@ select {
     @media screen and (max-width: 1024px) {
       .news__card-descr--outdoors {
         height: 100%;
-        padding-top: 153px; } }
+        padding-top: 166px; } }
     @media screen and (max-width: 965px) {
       .news__card-descr--outdoors {
-        padding-top: 389px; } }
+        padding-top: 401px; } }
     @media screen and (max-width: 768px) {
       .news__card-descr--outdoors {
         -webkit-border-radius: 0;
                 border-radius: 0;
-        padding-top: 262px; } }
+        padding-top: 275px; } }
     @media screen and (max-width: 554px) {
       .news__card-descr--outdoors {
         padding-top: 400px;

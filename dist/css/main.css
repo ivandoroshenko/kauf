@@ -152,25 +152,23 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.35);
   -webkit-border-radius: 50%;
           border-radius: 50%; }
-  @media screen and (max-width: 768px) {
-    .prev,
-    .next {
-      display: none; } }
 
 .slick-disabled {
   color: rgba(255, 255, 255, 0.35); }
 
 .prev {
   left: 70px; }
-  @media screen and (max-width: 682px) {
+  @media screen and (max-width: 768px) {
     .prev {
-      left: 40px; } }
+      display: none;
+      visibility: hidden; } }
 
 .next {
   right: 70px; }
-  @media screen and (max-width: 682px) {
+  @media screen and (max-width: 768px) {
     .next {
-      right: 40px; } }
+      display: none;
+      visibility: hidden; } }
 
 .slick-dots {
   bottom: 30px; }
@@ -393,7 +391,7 @@ body {
     text-transform: uppercase;
     letter-spacing: 1.2px;
     text-decoration: none; }
-    .nav__link:focus {
+    .nav__link:active, .nav__link:hover {
       color: #fff; }
 
 .intro {
@@ -519,9 +517,6 @@ body {
           flex-flow: row nowrap; }
   .storage__slide:nth-child(3n) .storage__item--descr {
     border: none; }
-  @media screen and (max-width: 768px) {
-    .storage__slide {
-      width: 45%; } }
 
 .storage__item {
   padding: 0;
@@ -1759,6 +1754,9 @@ select {
     -webkit-transition: width 0.5s ease-in-out;
     -o-transition: width 0.5s ease-in-out;
     transition: width 0.5s ease-in-out; }
+    @media screen and (max-width: 360px) {
+      .footer__main input[type=email] {
+        width: 180px; } }
   .footer__main #footer__email::-webkit-input-placeholder {
     color: #fff; }
   .footer__main #footer__email::-moz-placeholder {
