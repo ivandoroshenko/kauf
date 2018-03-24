@@ -1,41 +1,30 @@
-$(function() {
-    //MIDDLE SLIDER WITH THE GOODS 
-    $('.storage__slider').slick({
+$('.intro__slider').slick({
 
-        dots: false,
-        arrows: true,
-        slidesToShow: 3,
-        slidesToScroll: 3,
-        infinite: true,
-        autoplay: false,
-        autoplaySpeed: 2000,
-        speed: 600,
-        fade: false,
-        cssEase: 'ease-out',
-        adaptiveHeight: false,
-        responsive: [
-            {
-                breakpoint: 769,
-                settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 1
+    dots: true,
+    arrows: true,
+    infinite: false,
+    autoplay: false,
+    autoplaySpeed: 2000,
+    speed: 500,
+    fade: false,
+    cssEase: 'ease-in-out',
+    adaptiveHeight: false,
 
-                }
-            },
+    prevArrow: $('.prev'),
+    nextArrow: $('.next'),
+    responsive: [
+        {
+            breakpoint: 769,
+            settings: {
+                arrows: false
 
-            {
-                breakpoint: 529,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1
-
-                }
             }
+        }
+    ]
+});
 
-        ],
-        prevArrow: $('.storage-prev'),
-        nextArrow: $('.storage-next')
-    });
+$(function() {
+   
     //navigation click======
     // $('.nav__item a').click(function (e) {
     //     e.preventDefault();
@@ -48,30 +37,7 @@ $(function() {
     // });
 
     // BIG SLIDER
-    $('.intro__slider').slick({
-       
-        dots: true,
-        arrows: true,
-        infinite: false,
-        autoplay: false,
-        autoplaySpeed: 2000,
-        speed: 500,
-        fade: false,
-        cssEase: 'ease-in-out',
-        adaptiveHeight: false,
-        
-        prevArrow: $('.prev'),
-        nextArrow: $('.next'),
-        responsive: [
-            {
-                breakpoint: 769,
-                settings: {
-                    arrows: false
-
-                }
-            }
-        ]
-    });
+    
 
     
 
@@ -127,6 +93,44 @@ $(function() {
         nextArrow: $('.video-next'),
 
        
+    });
+
+    //MIDDLE SLIDER WITH THE GOODS 
+    $('.storage__slider').slick({
+
+        dots: false,
+        arrows: true,
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        infinite: true,
+        autoplay: false,
+        autoplaySpeed: 2000,
+        speed: 600,
+        fade: false,
+        cssEase: 'ease-out',
+        adaptiveHeight: false,
+        responsive: [
+            {
+                breakpoint: 769,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1
+
+                }
+            },
+
+            {
+                breakpoint: 529,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+
+                }
+            }
+
+        ],
+        prevArrow: $('.storage-prev'),
+        nextArrow: $('.storage-next')
     });
 
     $('#autoplay').prop("checked", function () {
