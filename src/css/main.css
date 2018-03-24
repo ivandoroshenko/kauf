@@ -780,10 +780,10 @@ select {
       padding: 0 0 0 15px; } }
   @media screen and (max-width: 768px) {
     .sort__list {
-      -webkit-box-align: space-stretch;
-      -webkit-align-items: space-stretch;
-          -ms-flex-align: space-stretch;
-              align-items: space-stretch; } }
+      -webkit-box-align: stretch;
+      -webkit-align-items: stretch;
+          -ms-flex-align: stretch;
+              align-items: stretch; } }
   @media screen and (max-width: 596px) {
     .sort__list {
       width: 100%;
