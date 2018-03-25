@@ -391,8 +391,8 @@ body {
     text-transform: uppercase;
     letter-spacing: 1.2px;
     text-decoration: none; }
-    .nav__link:active, .nav__link:hover {
-      color: #fff; }
+  .nav .lang, .nav__list .lang {
+    color: #fff; }
 
 .intro {
   -webkit-border-radius: 5px;
@@ -900,6 +900,9 @@ select {
   @media screen and (max-width: 554px) {
     .news-col-4 {
       width: 100%; } }
+  @media screen and (max-width: 254px) {
+    .news-col-4 {
+      min-width: 0; } }
 
 .news__card {
   -webkit-border-radius: 6px;
@@ -982,6 +985,9 @@ select {
     margin: 0 0 5px;
     -webkit-border-radius: 6px;
             border-radius: 6px; }
+    @media screen and (max-width: 254px) {
+      .news__card--cars .news__card-title {
+        font-size: 1rem; } }
   .news__card--cars .news__card-subtitle {
     color: #8c8c99;
     font-family: "Lato", sans-serif;
@@ -1005,6 +1011,9 @@ select {
     @media screen and (max-width: 720px) {
       .news__card--cars .news__card-subtitle {
         padding-bottom: 20px; } }
+    @media screen and (max-width: 254px) {
+      .news__card--cars .news__card-subtitle {
+        font-size: 0.8rem; } }
 
 .news__card--outdoors {
   position: relative;
@@ -1109,6 +1118,12 @@ select {
       .news__card-descr--cars {
         -webkit-border-radius: 0;
                 border-radius: 0; } }
+    @media screen and (max-width: 254px) {
+      .news__card-descr--cars {
+        min-width: 0;
+        max-width: 100%; } }
+  .news__card-descr--cars-it {
+    padding: 15px 20px 10px; }
   .news__card-descr--outdoors {
     padding: 216px 30px 38px;
     left: 0;
@@ -1340,6 +1355,9 @@ select {
         max-width: 100%;
         font-size: 1.125rem;
         padding-bottom: 183px; } }
+    @media screen and (max-width: 554px) {
+      .news__card--art .news__card-subtitle {
+        padding-bottom: 5px; } }
 
 .news__card-testimonials {
   display: -webkit-box;
@@ -1358,6 +1376,9 @@ select {
   padding: 8px 12px 0;
   border-top: 1px solid #e7e7e7;
   margin-top: auto; }
+  @media screen and (max-width: 254px) {
+    .news__card-testimonials {
+      padding: 8px 0 0; } }
   .news__card-testimonials .far {
     color: rgba(69, 69, 83, 0.5);
     font-size: 0.875rem; }
@@ -1731,6 +1752,7 @@ select {
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  /* Change input background color ;) */
   /* Firefox 19+ */
   /* Firefox 18- */ }
   @media screen and (max-width: 672px) {
@@ -1744,7 +1766,7 @@ select {
     width: 224px;
     -webkit-border-radius: 20px;
             border-radius: 20px;
-    background-color: rgba(255, 255, 255, 0.3);
+    background-color: rgba(255, 255, 255, 0.302);
     border: none;
     margin: 0;
     padding: 12px;
@@ -1757,6 +1779,11 @@ select {
     @media screen and (max-width: 360px) {
       .footer__main input[type=email] {
         width: 180px; } }
+  .footer__main #footer__email:-webkit-autofill {
+    box-shadow: 0 0 0 30px #7d7d87 inset;
+    -webkit-box-shadow: 0 0 0 30px #7d7d87 inset; }
+  .footer__main input:-webkit-autofill {
+    -webkit-text-fill-color: #b6b6bb !important; }
   .footer__main #footer__email::-webkit-input-placeholder {
     color: #fff; }
   .footer__main #footer__email::-moz-placeholder {
