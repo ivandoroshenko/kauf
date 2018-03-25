@@ -144,41 +144,26 @@ $(function() {
 
     
 
-        // VIDEO LABELS
-   
-    // for (i = 0; i < document.getElementsByClassName('video__clip').length; i++) {
-    //     var video = document.getElementsByClassName('video__clip')[i];
-    //     video.addEventListener('loadedmetadata', function () {
-    //         var duration = $(video).duration;
-    //         console.log(video.duration);
-    //     });     
-    //     console.log(video);
-        
-    //     console.log(duration);
-    //     var t = setInterval(function () {
-            
-    //         if (video.readyState > 0) {
-    //             var duration = $(video).duration;
-    //             console.log(duration);
-    //             var roundDuration = Math.floor(duration);
-    //             let addCount = '';
-    //             if (roundDuration % 60 > 10) {
-    //                 addCount = '0'
-    //             }
-    //             else addCount = ''
-    //             $('#videoDurClip' + i).text(Math.floor(roundDuration / 60) + ':' + addCount + roundDuration % 60);
-    //             clearInterval(t);
-    //         }
-            
-    //     }, 2000);
+    // VIDEO DURATION LABELS
+    videoList = document.querySelectorAll('.video__clip');
+    var videoArray = Array.from(videoList);
+    videoArray.forEach(function (item, i, videoArray) {
+        item.addEventListener('loadedmetadata', function () {
 
-    // }
-    
-    var vid = document.getElementById("video__clip0");
-    vid.onloadedmetadata = function () {
-        duration = vid.duration;
-        console.log(duration);  
-    };
+            var durationList = document.querySelectorAll('.video-duration');
+            var durationArray = Array.from(durationList);
+                label = durationArray[i];
+                console.log(label);
+                
+                var roundDuration = Math.floor(item.duration);
+                label.text = roundDuration;
+                console.log(label.text);
+                if (roundDuration % 60 < 10) {
+                    addCount = '0'
+                } else addCount = '';
+                $(label).text(Math.floor(roundDuration / 60) + ':' + addCount + roundDuration % 60);
+
+        });
+    });  
 }); 
-
 
