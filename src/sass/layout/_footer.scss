@@ -56,25 +56,37 @@
             flex-direction: column;
         }
 
-         input[type=email] {
-        width: 224px;
-        border-radius: 20px;
-        background-color: rgba(255, 255, 255, 0.3);
-        border: none;
-        margin: 0;
-        padding: 12px;
-        font-family: $base-font;
-        color: rgba(255, 255, 255, 0.5);
-        position: relative;
-        transition: width 0.5s ease-in-out;
+        input[type=email] {
+            width: 224px;
+            border-radius: 20px;
+            background-color: rgba(255, 255, 255, 0.302);
+            border: none;
+            margin: 0;
+            padding: 12px;
+            font-family: $base-font;
+            color: rgba(255, 255, 255, 0.5);
+            position: relative;
+            transition: width 0.5s ease-in-out;
         
-
         @media screen and (max-width: 360px) {
             width: 180px;
         }
 
         
-    }   
+    }  
+    /* Change input background color ;) */
+    #footer__email:-webkit-autofill {
+    box-shadow: 0 0 0 30px #7d7d87 inset;
+    -webkit-box-shadow: 0 0 0 30px #7d7d87 inset;
+}
+
+    
+    input:-webkit-autofill {
+        -webkit-text-fill-color: #b6b6bb !important;
+    }
+    
+
+   
 
         #footer__email::-webkit-input-placeholder {color:#fff}
         #footer__email::-moz-placeholder          {color:#fff}/* Firefox 19+ */

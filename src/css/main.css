@@ -391,8 +391,8 @@ body {
     text-transform: uppercase;
     letter-spacing: 1.2px;
     text-decoration: none; }
-    .nav__link:active, .nav__link:hover {
-      color: #fff; }
+  .nav .lang, .nav__list .lang {
+    color: #fff; }
 
 .intro {
   -webkit-border-radius: 5px;
@@ -1122,6 +1122,8 @@ select {
       .news__card-descr--cars {
         min-width: 0;
         max-width: 100%; } }
+  .news__card-descr--cars-it {
+    padding: 15px 20px 10px; }
   .news__card-descr--outdoors {
     padding: 216px 30px 38px;
     left: 0;
@@ -1750,6 +1752,7 @@ select {
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  /* Change input background color ;) */
   /* Firefox 19+ */
   /* Firefox 18- */ }
   @media screen and (max-width: 672px) {
@@ -1763,7 +1766,7 @@ select {
     width: 224px;
     -webkit-border-radius: 20px;
             border-radius: 20px;
-    background-color: rgba(255, 255, 255, 0.3);
+    background-color: rgba(255, 255, 255, 0.302);
     border: none;
     margin: 0;
     padding: 12px;
@@ -1776,6 +1779,11 @@ select {
     @media screen and (max-width: 360px) {
       .footer__main input[type=email] {
         width: 180px; } }
+  .footer__main #footer__email:-webkit-autofill {
+    box-shadow: 0 0 0 30px #7d7d87 inset;
+    -webkit-box-shadow: 0 0 0 30px #7d7d87 inset; }
+  .footer__main input:-webkit-autofill {
+    -webkit-text-fill-color: #b6b6bb !important; }
   .footer__main #footer__email::-webkit-input-placeholder {
     color: #fff; }
   .footer__main #footer__email::-moz-placeholder {
