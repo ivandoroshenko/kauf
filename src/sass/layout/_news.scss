@@ -606,6 +606,14 @@
     .far {
         color: rgba(69, 69, 83, 0.5);
         font-size: 0.875rem;
+
+        &:hover {
+            color: red;
+        }
+
+        &:focus {
+            color: red;
+        }
     }
  
     .count {

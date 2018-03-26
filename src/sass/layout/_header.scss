@@ -43,7 +43,19 @@
         @media screen and (max-width: 768px) {
             margin: 0 15px 0;
         }
+
+       
         
+    }
+    
+    svg {
+        fill: fff;
+        transition: fill 0.1s ease-in-out;
+        
+        &:hover {
+            fill: #49a0d5;
+            cursor: pointer;
+        }
     }
 
     &__item {

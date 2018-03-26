@@ -3,6 +3,10 @@
     border-radius: 24px;
     border: none;
     cursor: pointer;
+
+    &:focus {
+        outline: none;
+    }
     
 }
 
@@ -40,9 +44,9 @@
         color: #7b91af;
         box-shadow: 0 5px 20px rgba(168, 173, 187, 0.8);
     }
-
-    
-
- 
   
+}
+
+.btn--video:focus {
+    outline: none;
 }

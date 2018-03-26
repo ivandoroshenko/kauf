@@ -60,14 +60,6 @@
         border: none;
     
     }
-
-    // @media screen and (max-width: 768px) {
-    //     width: 45%;
-    // }
-
-    // @media screen and (max-width: 528px) {
-    //     width: 310px;
-    // }
 }
 
 
@@ -140,6 +132,11 @@
         font-family: $base-font;
         color: #fff;
         font-size: 0.688rem;
+        transition: background-color 0.3s, border-radius 0.3s;
+
+        &:hover {
+            border-radius: 10px;
+        }
         
          @media screen and (max-width: 768px) {
             margin-bottom: 10px;                    
@@ -151,21 +148,25 @@
 
         &--new {
             background-color: #f2a77e;
+            &:hover {
+                background-color: #b9aada;
+            }            
         }
 
          &--best {
             background-color: #b9aada;
+            &:hover {
+                background-color: #bbcc76;
+            } 
         }
 
          &--bio {
             background-color: #bbcc76;
+            &:hover {
+                background-color: #b9aada;
+            } 
         }
-
-         
-
     }
-    
-    
     .storage__item-name {
         color: #454553;
         font-family: $base-font;
@@ -190,9 +191,18 @@
         text-decoration: none;
         color: #454553;
         background: transparent;
-
         font-family: $base-font;    
         font-size: 0.875rem;
         font-weight: 700;
         white-space: nowrap;
+        transition: background-color 0.3s, box-shadow 0.3s;
+
+
+        &:hover {
+            // border-color: transparent;
+            background:  rgba(69, 69, 83, 0.3);
+            box-shadow: 0 2px 7px #454553;
+        }
     }
+
+   

@@ -100,7 +100,6 @@ $(function() {
                 settings: {
                     slidesToShow: 2,
                     slidesToScroll: 1
-
                 }
             },
 
@@ -109,10 +108,8 @@ $(function() {
                 settings: {
                     slidesToShow: 1,
                     slidesToScroll: 1
-
                 }
             }
-
         ],
         prevArrow: $('.storage-prev'),
         nextArrow: $('.storage-next')
