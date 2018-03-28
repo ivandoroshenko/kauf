@@ -487,6 +487,8 @@ body {
   @media screen and (max-width: 528px) {
     .storage {
       padding-bottom: 25px; } }
+  .storage .slick-disabled {
+    visibility: hidden; }
 
 .storage__heading {
   display: -webkit-box;
@@ -1457,6 +1459,9 @@ select {
   @media screen and (max-width: 460px) {
     .video {
       padding-bottom: 16px; } }
+  .video .slick-disabled {
+    opacity: 0.5;
+    cursor: auto; }
 
 .video__heading-wrap {
   margin: 0 51px 31px 51px;
@@ -1942,4 +1947,9 @@ select {
   color: #fff;
   opacity: 0.5; }
   .footer__social-link i {
-    font-size: 23px; }
+    font-size: 23px;
+    -webkit-transition: color 0.3s ease;
+    -o-transition: color 0.3s ease;
+    transition: color 0.3s ease; }
+    .footer__social-link i:hover {
+      color: #49a0d5; }

@@ -173,5 +173,10 @@
 
     i {
         font-size: 23px;
+        transition: color 0.3s ease;
+
+        &:hover {
+            color: #49a0d5;
+        }
     }
 }

@@ -14,8 +14,12 @@
     }
 
      @media screen and (max-width: 528px) {
-            padding-bottom: 25px;
-         }
+        padding-bottom: 25px;
+    }
+
+    .slick-disabled {
+        visibility: hidden;
+    }
 }
 .storage__heading {
     display: flex;
@@ -49,6 +53,8 @@
     @media screen and (max-width: 608px) {
         padding: 0;
     }
+
+    
 }
 .storage__slide {
     width: 33%;

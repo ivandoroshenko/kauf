@@ -28,7 +28,7 @@ $('.intro__slider').slick({
 $(function() {
     // BOTTOM SLIDER WITH VIDEO
     $('.video__slider').slick({
-
+        
         dots: false,
         arrows: true,
         slidesToShow: 5,
@@ -77,9 +77,21 @@ $(function() {
         prevArrow: $('.video-prev'),
         nextArrow: $('.video-next'),
 
-       
     });
-
+    $(document).click(function (e) {
+        e = event.target;
+        e.autoplay = true;
+        obj = $(e);
+        ht = e[0];
+        console.log(e);
+        console.log('.slick-slider');
+    });
+    slid = document.querySelector('.slick-slider');
+    jq = $(slid);   
+    console.log((jq).slick) ;
+    arjq = Array.from(jq);
+    console.log(arjq);
+    
     //MIDDLE SLIDER WITH THE GOODS 
     $('.storage__slider').slick({
 
@@ -150,11 +162,9 @@ $(function() {
             var durationList = document.querySelectorAll('.video-duration');
             var durationArray = Array.from(durationList);
                 label = durationArray[i];
-                console.log(label);
                 
                 var roundDuration = Math.floor(item.duration);
                 label.text = roundDuration;
-                console.log(label.text);
                 if (roundDuration % 60 < 10) {
                     addCount = '0'
                 } else addCount = '';

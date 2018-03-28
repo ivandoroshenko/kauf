@@ -12,6 +12,11 @@
         padding-bottom: 16px;
                 
     }
+
+    .slick-disabled {
+        opacity: 0.5;
+        cursor: auto;
+    }
 }
 
 // wrapper for correct positioning slider and border of the heading 
