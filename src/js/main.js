@@ -25,15 +25,24 @@ $('.intro__slider').slick({
     ]
 });
 
+
 $(function() {
-    // BOTTOM SLIDER WITH VIDEO
+    
+    // AUTOPLAY VIDEO SLIDER 
+    $("#autoplay").on("click", function () {
+        if (this.checked) {
+            console.log('works');
+            $('.video__slider').slick('slickPlay', true);
+        }
+    });    
+   // BOTTOM SLIDER WITH VIDEO
     $('.video__slider').slick({
         
         dots: false,
         arrows: true,
         slidesToShow: 5,
         slidesToScroll: 2,
-        infinite: false,
+        infinite: true,
         autoplay: false,    
         autoplaySpeed: 2000,
         speed: 700,
@@ -75,23 +84,12 @@ $(function() {
             }
         ],
         prevArrow: $('.video-prev'),
-        nextArrow: $('.video-next'),
+        nextArrow: $('.video-next')
+        
+    });
 
-    });
-    $(document).click(function (e) {
-        e = event.target;
-        e.autoplay = true;
-        obj = $(e);
-        ht = e[0];
-        console.log(e);
-        console.log('.slick-slider');
-    });
-    slid = document.querySelector('.slick-slider');
-    jq = $(slid);   
-    console.log((jq).slick) ;
-    arjq = Array.from(jq);
-    console.log(arjq);
-    
+ 
+   
     //MIDDLE SLIDER WITH THE GOODS 
     $('.storage__slider').slick({
 
@@ -126,14 +124,7 @@ $(function() {
         prevArrow: $('.storage-prev'),
         nextArrow: $('.storage-next')
     });
-
-    $('#autoplay').prop("checked", function () {
-        $('video__slider').slick({
-            autoplay: true
-        })
-    });
     
-
     // VIDEO PLAY PAUSE
     $('video').click(function (event) {
         this.paused ? this.play(): this.pause();
@@ -145,14 +136,10 @@ $(function() {
        
         if ($(vid).attr("controls", false) && ($(vid).hasClass("video__clip")) || ($(vid).hasClass("top__video")) ) {
          $(vid).prop("controls", true);
-            
-           
-            
         } 
     });
 
     
-
     // VIDEO DURATION LABELS
     videoList = document.querySelectorAll('.video__clip');
     var videoArray = Array.from(videoList);

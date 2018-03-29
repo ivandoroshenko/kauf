@@ -1826,6 +1826,8 @@ select {
     -webkit-transition: width 0.5s ease-in-out;
     -o-transition: width 0.5s ease-in-out;
     transition: width 0.5s ease-in-out; }
+    .footer__main input[type=email]:focus {
+      outline: none; }
     @media screen and (max-width: 360px) {
       .footer__main input[type=email] {
         width: 180px; } }
