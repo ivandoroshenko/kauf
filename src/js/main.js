@@ -27,7 +27,28 @@ $('.intro__slider').slick({
 
 
 $(function() {
-    
+
+    // VIDEO DURATION LABELS
+    videoList = document.querySelectorAll('.video__clip');
+    var videoArray = Array.from(videoList);
+    videoArray.forEach(function (item, i, videoArray) {
+        item.addEventListener('loadedmetadata', function () {
+
+            var durationList = document.querySelectorAll('.video-duration');
+            var durationArray = Array.from(durationList);
+            label = durationArray[i];
+
+            var roundDuration = Math.floor(item.duration);
+            label.text = roundDuration;
+            if (roundDuration % 60 < 10) {
+                addCount = '0'
+            } else addCount = '';
+            $(label).text(Math.floor(roundDuration / 60) + ':' + addCount + roundDuration % 60);
+
+        });
+    });
+
+
     // AUTOPLAY VIDEO SLIDER 
     $("#autoplay").on("click", function () {
         if (this.checked) {
@@ -139,25 +160,4 @@ $(function() {
         } 
     });
 
-    
-    // VIDEO DURATION LABELS
-    videoList = document.querySelectorAll('.video__clip');
-    var videoArray = Array.from(videoList);
-    videoArray.forEach(function (item, i, videoArray) {
-        item.addEventListener('loadedmetadata', function () {
-
-            var durationList = document.querySelectorAll('.video-duration');
-            var durationArray = Array.from(durationList);
-                label = durationArray[i];
-                
-                var roundDuration = Math.floor(item.duration);
-                label.text = roundDuration;
-                if (roundDuration % 60 < 10) {
-                    addCount = '0'
-                } else addCount = '';
-                $(label).text(Math.floor(roundDuration / 60) + ':' + addCount + roundDuration % 60);
-
-        });
-    });  
 }); 
-
