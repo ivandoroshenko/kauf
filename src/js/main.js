@@ -25,47 +25,23 @@ $('.intro__slider').slick({
     ]
 });
 
-
 $(function() {
-
-    // VIDEO DURATION LABELS
-    videoList = document.querySelectorAll('.video__clip');
-    var videoArray = Array.from(videoList);
-    videoArray.forEach(function (item, i, videoArray) {
-        item.addEventListener('loadedmetadata', function () {
-
-            var durationList = document.querySelectorAll('.video-duration');
-            var durationArray = Array.from(durationList);
-            label = durationArray[i];
-
-            var roundDuration = Math.floor(item.duration);
-            label.text = roundDuration;
-            if (roundDuration % 60 < 10) {
-                addCount = '0'
-            } else addCount = '';
-            $(label).text(Math.floor(roundDuration / 60) + ':' + addCount + roundDuration % 60);
-
-        });
-    });
-
-
     // AUTOPLAY VIDEO SLIDER 
     $("#autoplay").on("click", function () {
         if (this.checked) {
             console.log('works');
             $('.video__slider').slick('slickPlay', true);
-        }
+        } 
     });    
    // BOTTOM SLIDER WITH VIDEO
     $('.video__slider').slick({
-        
         dots: false,
         arrows: true,
         slidesToShow: 5,
         slidesToScroll: 2,
         infinite: true,
         autoplay: false,    
-        autoplaySpeed: 2000,
+        autoplaySpeed: 1000,
         speed: 700,
         fade: false,
         cssEase: 'ease-in-out',
@@ -109,7 +85,26 @@ $(function() {
         
     });
 
- 
+    // VIDEO DURATION LABELS
+    videoList = document.querySelectorAll('.video__clip');
+    var videoArray = Array.from(videoList);
+    videoArray.forEach(function (item, i, videoArray) {
+        item.addEventListener('loadedmetadata', function () {
+
+            var durationList = document.querySelectorAll('.video-duration');
+            var durationArray = Array.from(durationList);
+            label = durationArray[i];
+
+            var roundDuration = Math.floor(item.duration);
+            label.text = roundDuration;
+            if (roundDuration % 60 < 10) {
+                addCount = '0'
+            } else addCount = '';
+            $(label).text(Math.floor(roundDuration / 60) + ':' + addCount + roundDuration % 60);
+
+        });
+    });
+
    
     //MIDDLE SLIDER WITH THE GOODS 
     $('.storage__slider').slick({
