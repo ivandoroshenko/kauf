@@ -26,13 +26,7 @@ $('.intro__slider').slick({
 });
 
 $(function() {
-    // AUTOPLAY VIDEO SLIDER 
-    $("#autoplay").on("click", function () {
-        if (this.checked) {
-            console.log('works');
-            $('.video__slider').slick('slickPlay', true);
-        } 
-    });    
+
    // BOTTOM SLIDER WITH VIDEO
     $('.video__slider').slick({
         dots: false,
@@ -84,6 +78,14 @@ $(function() {
         nextArrow: $('.video-next')
         
     });
+
+    // AUTOPLAY VIDEO SLIDER 
+    $("#autoplay").on("click", function () {
+        if (this.checked) {
+            console.log('works');
+            $('.video__slider').slick('slickPlay', true);
+        }
+    });  
 
     // VIDEO DURATION LABELS
     videoList = document.querySelectorAll('.video__clip');
